@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  color: white;
+}
+
+.div3 {
+  grid-area: 1 / 5 / 2 / 6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header {
+  display: grid;
+  color: white;
+
+  justify-items: right;
+  grid-column: 1;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.headerA {
+  padding: 0;
+
+  color: white;
+  border-radius: 0;
+  background-color: #0f1624;
+  box-shadow: none;
+}
+
+.headerA:hover {
+  color: #d1d7e2;
+  background-color: #0f1624;
+}
