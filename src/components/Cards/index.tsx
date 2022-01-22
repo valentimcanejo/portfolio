@@ -7,6 +7,7 @@ import { SiElectron } from "react-icons/si";
 import { VscJson } from "react-icons/vsc";
 import { SiJavascript } from "react-icons/si";
 import { SiThreedotjs } from "react-icons/si";
+import { SiMaterialui } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { FaEthereum } from "react-icons/fa";
@@ -16,14 +17,15 @@ export default function Cards() {
     <div>
       <div className="app">
         <Card
-          titulo={"Calculadora"}
-          nome={"React JS"}
-          descricao={"Calculator in React App"}
-          link={"https://github.com/valentimcanejo/calculadora"}
-          color={"linear-gradient(270deg, #c56cd6 0%, #5d6874 100%)"}
-          colorB={"linear-gradient(270deg, #5d6874 0%, #c56cd6 100%)"}
-          icon={[<FaReact />]}
+          titulo={"Desafio-Frexco"}
+          nome={"React JS with TS"}
+          descricao={"Shopping simulation consuming fruityvice API"}
+          link={"https://github.com/valentimcanejo/desafio-frexco"}
+          color={"linear-gradient(270deg, #52c234 0%, #061700 100%)"}
+          colorB={"linear-gradient(270deg, #061700 0%, #52c234 100%)"}
+          icon={[<FaReact />, " ", <SiTypescript />, " ", <SiMaterialui />]}
         />
+
         <Card
           titulo={"ETH Wallet"}
           nome={"React with TS"}
@@ -31,7 +33,15 @@ export default function Cards() {
           link={"https://github.com/valentimcanejo/desafio-dexkit"}
           color={"linear-gradient(270deg, #0FF0B3 0%, #036ED9 50%)"}
           colorB={"linear-gradient(270deg, #036ED9 0%, #0FF0B3 160%)"}
-          icon={[<FaReact />, " ", <SiTypescript />, " ", <FaEthereum />]}
+          icon={[
+            <FaReact />,
+            " ",
+            <SiTypescript />,
+            " ",
+            <FaEthereum />,
+            " ",
+            <SiMaterialui />,
+          ]}
         />
         <Card
           titulo={"Desafio-NAVI"}
@@ -41,6 +51,15 @@ export default function Cards() {
           color={"linear-gradient(270deg, #fcdf8a 0%, #f38381 100%)"}
           colorB={"linear-gradient(270deg, #f38381 0%, #fcdf8a 100%)"}
           icon={<FaReact />}
+        />
+        <Card
+          titulo={"Calculadora"}
+          nome={"React JS"}
+          descricao={"Calculator in React App"}
+          link={"https://github.com/valentimcanejo/calculadora"}
+          color={"linear-gradient(270deg, #c56cd6 0%, #5d6874 100%)"}
+          colorB={"linear-gradient(270deg, #5d6874 0%, #c56cd6 100%)"}
+          icon={[<FaReact />]}
         />
         <Card
           titulo={"Most Used Words"}
