@@ -1,0 +1,38 @@
+import type { AppLocale } from "@/i18n/routing";
+import type { Profile, Project, ExperienceEntry } from "@/content/types";
+
+import { profile as enProfile } from "./en/profile";
+import { profile as ptProfile } from "./pt/profile";
+import { projects as enProjects } from "./en/projects";
+import { projects as ptProjects } from "./pt/projects";
+import { experience as enExperience } from "./en/experience";
+import { experience as ptExperience } from "./pt/experience";
+
+const profiles: Record<AppLocale, Profile> = { en: enProfile, pt: ptProfile };
+const projectsByLocale: Record<AppLocale, Project[]> = {
+  en: enProjects,
+  pt: ptProjects,
+};
+const experienceByLocale: Record<AppLocale, ExperienceEntry[]> = {
+  en: enExperience,
+  pt: ptExperience,
+};
+
+export function getProfile(locale: AppLocale): Profile {
+  return profiles[locale];
+}
+
+export function getProjects(locale: AppLocale): Project[] {
+  return projectsByLocale[locale];
+}
+
+export function getProject(locale: AppLocale, slug: string): Project | undefined {
+  return projectsByLocale[locale].find((project) => project.slug === slug);
+}
+
+export function getExperience(locale: AppLocale): ExperienceEntry[] {
+  return experienceByLocale[locale];
+}
+
+export { skills } from "./skills";
+export type { Layer, TechKey, SocialKey } from "./types";
