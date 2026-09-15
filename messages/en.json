@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "about": "about",
+    "projects": "projects",
+    "experience": "experience",
+    "contact": "contact",
+    "resume": "resume"
+  },
+  "hero": {
+    "eyebrow": "// fullstack developer",
+    "ctaProjects": "View projects",
+    "ctaContact": "Get in touch",
+    "legendTitle": "the stack, exploded",
+    "legendHint": "Every project below is tagged by the layer(s) it touches."
+  },
+  "layers": {
+    "interface": { "label": "Interface", "hint": "UI, client-side state, accessibility" },
+    "application": { "label": "Application", "hint": "APIs, business logic, services" },
+    "data": { "label": "Data", "hint": "Databases, persistence, contracts" },
+    "infra": { "label": "Infra", "hint": "Build, deploy, tooling" }
+  },
+  "projects": {
+    "eyebrow": "// projects",
+    "title": "Selected work",
+    "subtitle": "Newest first — a mix of freelance challenges and earlier projects from when I was learning the ropes. Filter by stack layer using the legend above.",
+    "filterAll": "All layers",
+    "viewCase": "Read case",
+    "visitRepo": "Repository",
+    "visitDemo": "Live demo",
+    "empty": "No projects tagged to this layer yet."
+  },
+  "projectCase": {
+    "back": "Back to projects",
+    "stackTitle": "Stack",
+    "linksTitle": "Links",
+    "layersTitle": "Layers touched",
+    "notesTitle": "Notes",
+    "notesEmpty": "Longer write-up coming soon — for now, the repository has the full source."
+  },
+  "experience": {
+    "eyebrow": "// experience",
+    "title": "Timeline",
+    "subtitle": "Roles and the work behind them.",
+    "empty": "Professional history is being written up — reach out and I'll walk you through it directly."
+  },
+  "skills": {
+    "eyebrow": "// skills",
+    "title": "Toolbox",
+    "subtitle": "Organized by the layer of the stack each tool lives in."
+  },
+  "contact": {
+    "eyebrow": "// contact",
+    "title": "Let's build something",
+    "subtitle": "Open to fullstack roles, remote-first. The fastest way to reach me is email.",
+    "emailCta": "Email me",
+    "resumeEn": "Resume (EN)",
+    "resumePt": "Currículo (PT)",
+    "socialTitle": "Elsewhere"
+  },
+  "footer": {
+    "builtWith": "Built with Next.js & Tailwind CSS.",
+    "backToTop": "Back to top"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "pt": "Português"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "about": "sobre",
+    "projects": "projetos",
+    "experience": "experiência",
+    "contact": "contato",
+    "resume": "currículo"
+  },
+  "hero": {
+    "eyebrow": "// desenvolvedor fullstack",
+    "ctaProjects": "Ver projetos",
+    "ctaContact": "Falar comigo",
+    "legendTitle": "a stack, explodida",
+    "legendHint": "Todo projeto abaixo é marcado pela(s) camada(s) que envolve."
+  },
+  "layers": {
+    "interface": { "label": "Interface", "hint": "UI, estado no cliente, acessibilidade" },
+    "application": { "label": "Aplicação", "hint": "APIs, regras de negócio, serviços" },
+    "data": { "label": "Dados", "hint": "Bancos de dados, persistência, contratos" },
+    "infra": { "label": "Infra", "hint": "Build, deploy, ferramentas" }
+  },
+  "projects": {
+    "eyebrow": "// projetos",
+    "title": "Trabalhos selecionados",
+    "subtitle": "Mais recentes primeiro — uma mistura de desafios de vagas e projetos mais antigos de quando eu estava aprendendo. Filtre pela camada da stack usando a legenda acima.",
+    "filterAll": "Todas as camadas",
+    "viewCase": "Ler case",
+    "visitRepo": "Repositório",
+    "visitDemo": "Demo ao vivo",
+    "empty": "Ainda não há projetos marcados nessa camada."
+  },
+  "projectCase": {
+    "back": "Voltar aos projetos",
+    "stackTitle": "Stack",
+    "linksTitle": "Links",
+    "layersTitle": "Camadas envolvidas",
+    "notesTitle": "Notas",
+    "notesEmpty": "Um relato mais completo vem em breve — por enquanto, o repositório tem o código-fonte completo."
+  },
+  "experience": {
+    "eyebrow": "// experiência",
+    "title": "Linha do tempo",
+    "subtitle": "Cargos e o trabalho por trás deles.",
+    "empty": "O histórico profissional ainda está sendo escrito — me contate e explico tudo diretamente."
+  },
+  "skills": {
+    "eyebrow": "// habilidades",
+    "title": "Caixa de ferramentas",
+    "subtitle": "Organizadas pela camada da stack em que cada ferramenta vive."
+  },
+  "contact": {
+    "eyebrow": "// contato",
+    "title": "Vamos construir algo",
+    "subtitle": "Aberto a vagas fullstack, remoto em primeiro lugar. O jeito mais rápido de me encontrar é por e-mail.",
+    "emailCta": "Enviar e-mail",
+    "resumeEn": "Resume (EN)",
+    "resumePt": "Currículo (PT)",
+    "socialTitle": "Em outros lugares"
+  },
+  "footer": {
+    "builtWith": "Construído com Next.js e Tailwind CSS.",
+    "backToTop": "Voltar ao topo"
+  },
+  "language": {
+    "label": "Idioma",
+    "en": "English",
+    "pt": "Português"
+  }
+}
