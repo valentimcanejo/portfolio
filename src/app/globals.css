@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  --color-paper: #f1eee4;
+  --color-ink: #14171c;
+  --color-amber: #d8842a;
+  --color-teal: #2f7e77;
+  --color-stamp: #b34a3c;
+  --color-graphite: #6b6656;
+
+  --background: var(--color-paper);
+  --foreground: var(--color-ink);
+  --border: color-mix(in srgb, var(--color-graphite) 35%, transparent);
+  --muted: color-mix(in srgb, var(--color-graphite) 78%, var(--color-ink) 22%);
+  --grid-line: color-mix(in srgb, var(--color-graphite) 6%, transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #17191d;
+    --foreground: #eeead9;
+    --border: color-mix(in srgb, var(--color-graphite) 55%, transparent);
+    --muted: color-mix(in srgb, var(--color-graphite) 40%, var(--foreground) 60%);
+    --grid-line: color-mix(in srgb, var(--color-graphite) 8%, transparent);
+    --color-amber: #eb9d3f;
+    --color-teal: #46a89f;
+    --color-stamp: #d3665a;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+
+  --color-layer-interface: var(--color-amber);
+  --color-layer-application: var(--color-teal);
+  --color-layer-data: var(--color-stamp);
+  --color-layer-infra: var(--color-graphite);
+
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-attachment: fixed;
+  background-position: -1px -1px;
+}
+
+@keyframes stack-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-stack-in {
+  animation: stack-in 0.5s ease-out both;
+}
+
+::selection {
+  background-color: var(--color-amber);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 2px;
+}
