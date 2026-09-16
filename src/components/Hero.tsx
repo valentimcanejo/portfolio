@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import type { AppLocale } from "@/content/types";
 import { getProfile } from "@/content";
 import { StackDiagram } from "./StackDiagram";
+import { FramedPhoto } from "./FramedPhoto";
 import { buttonClass } from "@/lib/styles";
 
 interface HeroProps {
@@ -17,10 +18,15 @@ export async function Hero({ locale }: HeroProps) {
       <div className="mx-auto grid max-w-5xl gap-12 px-6 py-20 lg:grid-cols-2 lg:items-center lg:py-28">
         <div>
           <p className="font-mono text-sm text-layer-application">{t("eyebrow")}</p>
-          <h1 className="mt-3 font-display text-5xl font-semibold tracking-tight sm:text-6xl lg:text-[3.75rem]">
-            {profile.name}
-          </h1>
-          <p className="mt-2 text-lg text-muted">{profile.tagline}</p>
+          <div className="mt-3 flex items-start gap-5">
+            <FramedPhoto />
+            <div>
+              <h1 className="font-display text-4xl font-semibold tracking-tight sm:text-5xl lg:text-[3.25rem]">
+                {profile.name}
+              </h1>
+              <p className="mt-2 text-lg text-muted">{profile.tagline}</p>
+            </div>
+          </div>
 
           <div className="mt-6 space-y-4 text-foreground/90">
             {profile.bio.map((paragraph, i) => (
