@@ -18,8 +18,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   return (
     <div id="top">
       <Hero locale={locale} />
-      <ProjectsSection projects={projects} />
       <ExperienceSection locale={locale} />
+      <ProjectsSection projects={projects} />
       <Contact locale={locale} />
     </div>
   );

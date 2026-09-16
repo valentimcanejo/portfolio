@@ -7,7 +7,7 @@ import { LocaleSwitcher } from "./LocaleSwitcher";
 import { socialIcons } from "./icons";
 import { getProfile } from "@/content";
 
-const SECTIONS = ["about", "projects", "experience", "contact"] as const;
+const SECTIONS = ["about", "experience", "projects", "contact"] as const;
 
 export function Header() {
   const t = useTranslations("nav");
