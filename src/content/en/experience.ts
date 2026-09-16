@@ -1,19 +1,38 @@
 import type { ExperienceEntry } from "@/content/types";
 
-// Pulled from what's publicly confirmed (GitHub profile). Exact dates are
-// unknown — add start/end dates and any earlier roles once confirmed.
 export const experience: ExperienceEntry[] = [
   {
-    role: "Fullstack Developer",
+    role: "Full Stack Developer",
     organization: "Fully Ecosystem",
-    period: "Present",
-    description: "Details and dates pending — ping me and I'll fill this in.",
+    period: "Jun 2025 – Jul 2026",
+    description:
+      "Built the Fully app — a health and wellness platform for a Prudential-backed startup used by tens of thousands of people — with React Native, native Kotlin/Swift modules, and a NestJS + PostgreSQL/MongoDB back end. Redesigned authentication with ForgeRock (40% faster), integrated Samsung Health, Apple Health, and Health Connect, and built the Next.js admin tooling.",
+  },
+  {
+    role: "Full Stack Developer",
+    organization: "DNA Center",
+    period: "Apr 2022 – Jun 2025",
+    description:
+      "Led the development team technically — architecture, coding standards, code reviews — on systems used daily by 300+ employees across 40 laboratory units. Built the company's design system from scratch, a real-time lab queuing system (50% faster patient service), cloud storage for millions of medical documents, and CI/CD with Jest and GitHub Actions.",
+  },
+  {
+    role: "Full Stack Developer (Freelance)",
+    organization: "AvaliarMe",
+    period: "Feb 2023 – Jun 2025",
+    description:
+      "Built and maintained web apps for 50+ businesses (1,000+ people impacted) with Next.js, Tailwind CSS, and Firebase — interactive clinical dashboards, WhatsApp Business API integration, and automated deploys on Vercel.",
+  },
+  {
+    role: "Creator & Developer",
+    organization: "Lumen (personal project)",
+    period: "Personal project",
+    description:
+      "Designed and built a multilingual (PT/EN/ES) mobile microlearning app end to end — product, UI design, development, and marketing.",
   },
   {
     role: "Systems Analysis and Development",
     organization: "IFRN — Natal Central",
-    period: "Graduated",
-    description:
-      "Degree in Systems Analysis and Development (Análise e Desenvolvimento de Sistemas).",
+    period: "2017 – 2023",
+    description: "Degree in Systems Analysis and Development (Análise e Desenvolvimento de Sistemas).",
   },
 ];

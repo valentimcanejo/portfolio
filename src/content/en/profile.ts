@@ -5,17 +5,15 @@ export const profile: Profile = {
   role: "Fullstack Developer",
   tagline: "I build across the whole stack — from the pixel to the database.",
   bio: [
-    "I'm a fullstack developer based in Brazil, working across React/TypeScript front ends and Node-based services, with a growing focus on the infrastructure that ships them.",
-    "I like projects that force me to touch every layer at once — a UI, the API behind it, and the data it depends on — because that's where I learn the most.",
+    "Full-stack developer based in Natal, Brazil, open to remote. End-to-end track record in React, Next.js, React Native, Node.js, and Firebase — most recently building the Fully app, a health and wellness platform for a Prudential-backed startup, working daily in English with distributed teams across the company.",
+    "Before that, I led a development team technically for three years at DNA Center, building mission-critical systems — lab queuing, medical document storage, microbiological tracking — used daily by 300+ employees across 40 laboratory units.",
+    "Outside of client and employer work, I design and build my own products, like Lumen, a multilingual microlearning app I took from idea through development, design, and marketing myself.",
   ],
-  location: "Brazil",
+  location: "Natal, RN, Brazil",
   email: "valentim.canejo@hotmail.com",
   socials: [
     { key: "github", url: "https://github.com/valentimcanejo" },
-    {
-      key: "linkedin",
-      url: "https://www.linkedin.com/in/r%C3%B4mulo-valentim-a48b75218/",
-    },
+    { key: "linkedin", url: "https://www.linkedin.com/in/romulo-valentim/" },
     { key: "instagram", url: "https://www.instagram.com/_rvalentim/" },
   ],
 };
