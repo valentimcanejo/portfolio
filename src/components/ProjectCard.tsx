@@ -1,3 +1,6 @@
+"use client";
+
+import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Project } from "@/content/types";
@@ -9,12 +12,37 @@ interface ProjectCardProps {
   project: Project;
 }
 
+const MAX_TILT_DEG = 6;
+
 export function ProjectCard({ project }: ProjectCardProps) {
   const t = useTranslations("projects");
   const layers = useTranslations("layers");
+  const cardRef = useRef<HTMLElement>(null);
+
+  function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
+    const card = cardRef.current;
+    if (!card) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const rect = card.getBoundingClientRect();
+    const px = (e.clientX - rect.left) / rect.width - 0.5;
+    const py = (e.clientY - rect.top) / rect.height - 0.5;
+    card.style.transform = `perspective(800px) rotateX(${(-py * MAX_TILT_DEG).toFixed(2)}deg) rotateY(${(px * MAX_TILT_DEG).toFixed(2)}deg) translateY(-4px)`;
+  }
+
+  function handleMouseLeave() {
+    const card = cardRef.current;
+    if (!card) return;
+    card.style.transform = "";
+  }
 
   return (
-    <article className="group flex flex-col justify-between rounded-sm border border-border bg-foreground/[0.02] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-layer-application hover:shadow-xl hover:shadow-layer-application/10">
+    <article
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      className="group flex flex-col justify-between rounded-sm border border-border bg-foreground/[0.02] p-5 transition-[transform,border-color,box-shadow] duration-200 ease-out will-change-transform hover:border-layer-application hover:shadow-xl hover:shadow-layer-application/10"
+    >
       <div>
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h3 className="font-display text-lg font-semibold transition-colors group-hover:text-layer-application">
