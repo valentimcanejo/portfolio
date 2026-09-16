@@ -57,4 +57,11 @@ export interface SkillGroup {
   items: string[];
 }
 
+export interface Stat {
+  value: number;
+  suffix?: string;
+  label: string;
+  layer: Layer;
+}
+
 export type { AppLocale };
