@@ -22,17 +22,4 @@ export const experience: ExperienceEntry[] = [
     description:
       "Desenvolvi e mantive aplicações web para mais de 50 estabelecimentos (1.000+ pessoas impactadas) com Next.js, Tailwind CSS e Firebase — dashboards clínicos interativos, integração com a API do WhatsApp Business, e deploy automatizado na Vercel.",
   },
-  {
-    role: "Criador & Desenvolvedor",
-    organization: "Lumen (projeto pessoal)",
-    period: "Projeto pessoal",
-    description:
-      "Idealizei e desenvolvi um app mobile de microlearning multilíngue (PT/EN/ES) de ponta a ponta — produto, design de interface, desenvolvimento e marketing.",
-  },
-  {
-    role: "Análise e Desenvolvimento de Sistemas",
-    organization: "IFRN — Natal Central",
-    period: "2017 – 2023",
-    description: "Graduação em Análise e Desenvolvimento de Sistemas.",
-  },
 ];

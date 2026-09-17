@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import type { AppLocale } from "@/content/types";
-import { getExperience, skills } from "@/content";
+import { getExperience, getEducation, skills } from "@/content";
 import { LAYER_ORDER, layerClasses } from "@/lib/layers";
 import { SectionHeading } from "./ui/SectionHeading";
 import { Reveal } from "./Reveal";
@@ -14,6 +14,7 @@ export async function ExperienceSection({ locale }: ExperienceSectionProps) {
   const s = await getTranslations({ locale, namespace: "skills" });
   const layers = await getTranslations({ locale, namespace: "layers" });
   const experience = getExperience(locale);
+  const education = getEducation(locale);
 
   return (
     <section id="experience" className="scroll-mt-20 border-b border-border">
@@ -35,6 +36,23 @@ export async function ExperienceSection({ locale }: ExperienceSectionProps) {
             </ol>
           ) : (
             <p className="mt-8 text-sm text-muted">{t("empty")}</p>
+          )}
+
+          {education.length > 0 && (
+            <div className="mt-10 border-t border-border pt-6">
+              <p className="font-mono text-xs uppercase text-muted">{t("educationTitle")}</p>
+              <ul className="mt-3 space-y-3">
+                {education.map((entry, i) => (
+                  <li key={i} className="flex flex-wrap items-baseline justify-between gap-x-3">
+                    <span>
+                      <span className="font-display font-semibold">{entry.organization}</span>
+                      <span className="ml-2 text-sm text-muted">{entry.role}</span>
+                    </span>
+                    <span className="font-mono text-xs text-muted">{entry.period}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
         </Reveal>
 

@@ -22,17 +22,4 @@ export const experience: ExperienceEntry[] = [
     description:
       "Built and maintained web apps for 50+ businesses (1,000+ people impacted) with Next.js, Tailwind CSS, and Firebase — interactive clinical dashboards, WhatsApp Business API integration, and automated deploys on Vercel.",
   },
-  {
-    role: "Creator & Developer",
-    organization: "Lumen (personal project)",
-    period: "Personal project",
-    description:
-      "Designed and built a multilingual (PT/EN/ES) mobile microlearning app end to end — product, UI design, development, and marketing.",
-  },
-  {
-    role: "Systems Analysis and Development",
-    organization: "IFRN — Natal Central",
-    period: "2017 – 2023",
-    description: "Degree in Systems Analysis and Development (Análise e Desenvolvimento de Sistemas).",
-  },
 ];

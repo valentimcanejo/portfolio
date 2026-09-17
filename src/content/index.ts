@@ -7,6 +7,8 @@ import { projects as enProjects } from "./en/projects";
 import { projects as ptProjects } from "./pt/projects";
 import { experience as enExperience } from "./en/experience";
 import { experience as ptExperience } from "./pt/experience";
+import { education as enEducation } from "./en/education";
+import { education as ptEducation } from "./pt/education";
 import { stats as enStats } from "./en/stats";
 import { stats as ptStats } from "./pt/stats";
 
@@ -18,6 +20,10 @@ const projectsByLocale: Record<AppLocale, Project[]> = {
 const experienceByLocale: Record<AppLocale, ExperienceEntry[]> = {
   en: enExperience,
   pt: ptExperience,
+};
+const educationByLocale: Record<AppLocale, ExperienceEntry[]> = {
+  en: enEducation,
+  pt: ptEducation,
 };
 const statsByLocale: Record<AppLocale, Stat[]> = { en: enStats, pt: ptStats };
 
@@ -35,6 +41,10 @@ export function getProject(locale: AppLocale, slug: string): Project | undefined
 
 export function getExperience(locale: AppLocale): ExperienceEntry[] {
   return experienceByLocale[locale];
+}
+
+export function getEducation(locale: AppLocale): ExperienceEntry[] {
+  return educationByLocale[locale];
 }
 
 export function getStats(locale: AppLocale): Stat[] {
