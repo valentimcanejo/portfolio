@@ -18,8 +18,8 @@ export const experience: ExperienceEntry[] = [
   {
     role: "Desenvolvedor Full Stack (Freelancer)",
     organization: "AvaliarMe",
-    period: "Fev 2023 – Jun 2025",
+    period: "Fev 2023 – Jun 2025 · paralelo ao DNA Center",
     description:
-      "Desenvolvi e mantive aplicações web para mais de 50 estabelecimentos (1.000+ pessoas impactadas) com Next.js, Tailwind CSS e Firebase — dashboards clínicos interativos, integração com a API do WhatsApp Business, e deploy automatizado na Vercel.",
+      "Trabalho freelance realizado em paralelo à minha posição full-time no DNA Center. Desenvolvi e mantive aplicações web para mais de 50 estabelecimentos (1.000+ pessoas impactadas) com Next.js, Tailwind CSS e Firebase — dashboards clínicos interativos, integração com a API do WhatsApp Business, e deploy automatizado na Vercel.",
   },
 ];

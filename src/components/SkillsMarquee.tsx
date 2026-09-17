@@ -11,12 +11,12 @@ interface SkillsMarqueeProps {
 
 export function SkillsMarquee({ layer, label, items, reverse }: SkillsMarqueeProps) {
   const classes = layerClasses[layer];
-  const duration = Math.max(items.length * 3, 18);
+  const duration = Math.max(items.length * 8, 40);
 
   return (
     <div>
       <p className={`font-mono text-xs uppercase ${classes.text}`}>{label}</p>
-      <div className="group relative mt-2 overflow-hidden motion-reduce:overflow-visible [mask-image:linear-gradient(90deg,transparent,black_5%,black_95%,transparent)]">
+      <div className="group relative mt-3 overflow-hidden motion-reduce:overflow-visible [mask-image:linear-gradient(90deg,transparent,black_5%,black_95%,transparent)]">
         <div
           className={`flex w-max gap-3 animate-marquee group-hover:[animation-play-state:paused] motion-reduce:animate-none motion-reduce:flex-wrap motion-reduce:w-full ${
             reverse ? "[animation-direction:reverse]" : ""
@@ -30,18 +30,14 @@ export function SkillsMarquee({ layer, label, items, reverse }: SkillsMarqueePro
               <span
                 key={`${item}-${i}`}
                 aria-hidden={i >= items.length}
-                className={`inline-flex shrink-0 items-center gap-2 rounded-sm border px-3 py-1.5 text-sm whitespace-nowrap ${classes.border} ${
+                className={`flex h-24 w-24 shrink-0 flex-col items-center justify-center gap-2 rounded-md border p-2 text-center transition-colors hover:border-foreground ${classes.border} ${
                   i >= items.length ? "motion-reduce:hidden" : ""
                 }`}
               >
                 {Icon && (
-                  <Icon
-                    aria-hidden
-                    className="text-base"
-                    style={color ? { color } : undefined}
-                  />
+                  <Icon aria-hidden className="text-3xl" style={color ? { color } : undefined} />
                 )}
-                {item}
+                <span className="text-xs leading-tight">{item}</span>
               </span>
             );
           })}

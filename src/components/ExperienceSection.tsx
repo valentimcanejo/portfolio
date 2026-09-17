@@ -41,7 +41,9 @@ export async function ExperienceSection({ locale }: ExperienceSectionProps) {
 
           {education.length > 0 && (
             <div className="mt-10 border-t border-border pt-6">
-              <p className="font-mono text-xs uppercase text-muted">{t("educationTitle")}</p>
+              <h3 className="font-display text-xl font-semibold tracking-tight">
+                {t("educationTitle")}
+              </h3>
               <ul className="mt-4 space-y-6">
                 {education.map((entry, i) => (
                   <li key={i}>
