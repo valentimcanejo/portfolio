@@ -1,9 +1,10 @@
 import { getTranslations } from "next-intl/server";
 import type { AppLocale } from "@/content/types";
 import { getExperience, getEducation, skills } from "@/content";
-import { LAYER_ORDER, layerClasses } from "@/lib/layers";
+import { LAYER_ORDER } from "@/lib/layers";
 import { SectionHeading } from "./ui/SectionHeading";
 import { Reveal } from "./Reveal";
+import { SkillsMarquee } from "./SkillsMarquee";
 
 interface ExperienceSectionProps {
   locale: AppLocale;
@@ -71,27 +72,18 @@ export async function ExperienceSection({ locale }: ExperienceSectionProps) {
         <Reveal delay={120}>
           <SectionHeading eyebrow={s("eyebrow")} title={s("title")} subtitle={s("subtitle")} />
 
-          <div className="mt-8 space-y-5">
-            {LAYER_ORDER.map((layer) => {
+          <div className="mt-8 space-y-6">
+            {LAYER_ORDER.map((layer, i) => {
               const group = skills.find((g) => g.layer === layer);
               if (!group) return null;
-              const classes = layerClasses[layer];
               return (
-                <div key={layer}>
-                  <p className={`font-mono text-xs uppercase ${classes.text}`}>
-                    {layers(`${layer}.label`)}
-                  </p>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    {group.items.map((item) => (
-                      <span
-                        key={item}
-                        className={`rounded-sm border px-2.5 py-1 text-sm transition-colors hover:border-foreground hover:text-foreground ${classes.border}`}
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+                <SkillsMarquee
+                  key={layer}
+                  layer={layer}
+                  label={layers(`${layer}.label`)}
+                  items={group.items}
+                  reverse={i % 2 === 1}
+                />
               );
             })}
           </div>
