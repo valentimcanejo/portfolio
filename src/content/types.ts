@@ -43,6 +43,7 @@ export interface Project {
 export interface ExperienceEntry {
   role: string;
   organization: string;
+  organizationUrl?: string;
   period: string;
   description: string;
 }

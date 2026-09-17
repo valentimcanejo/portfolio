@@ -41,14 +41,26 @@ export async function ExperienceSection({ locale }: ExperienceSectionProps) {
           {education.length > 0 && (
             <div className="mt-10 border-t border-border pt-6">
               <p className="font-mono text-xs uppercase text-muted">{t("educationTitle")}</p>
-              <ul className="mt-3 space-y-3">
+              <ul className="mt-4 space-y-6">
                 {education.map((entry, i) => (
-                  <li key={i} className="flex flex-wrap items-baseline justify-between gap-x-3">
-                    <span>
-                      <span className="font-display font-semibold">{entry.organization}</span>
-                      <span className="ml-2 text-sm text-muted">{entry.role}</span>
-                    </span>
-                    <span className="font-mono text-xs text-muted">{entry.period}</span>
+                  <li key={i}>
+                    <p className="font-mono text-xs uppercase text-muted">{entry.period}</p>
+                    <h3 className="mt-1 font-display text-lg font-semibold">
+                      {entry.organizationUrl ? (
+                        <a
+                          href={entry.organizationUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline decoration-layer-application decoration-2 underline-offset-4 hover:text-layer-application"
+                        >
+                          {entry.organization}
+                        </a>
+                      ) : (
+                        entry.organization
+                      )}
+                    </h3>
+                    <p className="font-mono text-sm text-layer-application">{entry.role}</p>
+                    <p className="mt-1 text-sm text-foreground/90">{entry.description}</p>
                   </li>
                 ))}
               </ul>
