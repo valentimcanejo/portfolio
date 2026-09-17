@@ -109,14 +109,16 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <div className="mt-10 border-t border-border pt-6">
         <h2 className="font-mono text-xs uppercase text-muted">{t("linksTitle")}</h2>
         <div className="mt-3 flex flex-wrap gap-5 font-mono text-sm">
-          <a
-            href={project.repoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-foreground hover:text-layer-application"
-          >
-            <FaGithub aria-hidden /> {p("visitRepo")}
-          </a>
+          {project.repoUrl && (
+            <a
+              href={project.repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-foreground hover:text-layer-application"
+            >
+              <FaGithub aria-hidden /> {p("visitRepo")}
+            </a>
+          )}
           {project.demoUrl && (
             <a
               href={project.demoUrl}

@@ -88,14 +88,16 @@ export function ProjectCard({ project }: ProjectCardProps) {
         >
           {t("viewCase")}
         </Link>
-        <a
-          href={project.repoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-muted hover:text-foreground"
-        >
-          <FaGithub aria-hidden /> {t("visitRepo")}
-        </a>
+        {project.repoUrl && (
+          <a
+            href={project.repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-muted hover:text-foreground"
+          >
+            <FaGithub aria-hidden /> {t("visitRepo")}
+          </a>
+        )}
         {project.demoUrl && (
           <a
             href={project.demoUrl}

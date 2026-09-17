@@ -35,7 +35,7 @@ export interface Project {
   notes?: string[];
   layers: Layer[];
   tech: TechKey[];
-  repoUrl: string;
+  repoUrl?: string;
   demoUrl?: string;
   year: number;
 }

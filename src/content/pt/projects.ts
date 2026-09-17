@@ -5,6 +5,23 @@ import type { Project } from "@/content/types";
 // registradas na memória do projeto.
 export const projects: Project[] = [
   {
+    slug: "lumen",
+    title: "Lumen",
+    role: "React Native (Expo)",
+    summary:
+      "Um app mobile de microlearning multilíngue (PT/EN/ES): sessões de 10 a 15 minutos em 12 trilhas de conhecimento (filosofia, história, psicologia, ciência e mais), idealizado e construído de ponta a ponta — produto, design de interface, desenvolvimento e marketing.",
+    layers: ["interface", "application", "data"],
+    tech: ["reactnative"],
+    demoUrl: "https://play.google.com/store/apps/details?id=com.valentimcanejo.lumen",
+    notes: [
+      "Ciclo da lição: cartões curtos, um quiz para fixar o conteúdo e um resumo no final.",
+      "XP, níveis, sequências (streaks) diárias e conquistas.",
+      "Nível Premium: narração em áudio, relatórios semanais/mensais de progresso gerados por IA, glossário pessoal e certificado de conclusão de trilha.",
+      "Produto pessoal de código fechado — sem repositório público.",
+    ],
+    year: 2026,
+  },
+  {
     slug: "price-tracker",
     title: "Price Tracker",
     role: "Next.js · TypeScript · Firebase",

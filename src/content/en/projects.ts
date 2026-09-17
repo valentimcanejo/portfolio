@@ -4,6 +4,23 @@ import type { Project } from "@/content/types";
 // descriptions only. Selection and framing decisions live in project memory.
 export const projects: Project[] = [
   {
+    slug: "lumen",
+    title: "Lumen",
+    role: "React Native (Expo)",
+    summary:
+      "A multilingual (PT/EN/ES) mobile microlearning app: 10–15 minute sessions across 12 knowledge tracks (philosophy, history, psychology, science, and more), designed and built end to end — product, UI design, development, and marketing.",
+    layers: ["interface", "application", "data"],
+    tech: ["reactnative"],
+    demoUrl: "https://play.google.com/store/apps/details?id=com.valentimcanejo.lumen",
+    notes: [
+      "Lesson cycle: short cards, a quiz to reinforce it, then a summary.",
+      "XP, levels, daily streaks, and achievements.",
+      "Premium tier: audio narration, AI-generated weekly/monthly progress reports, a personal glossary, and track-completion certificates.",
+      "Closed-source personal product — no public repository.",
+    ],
+    year: 2026,
+  },
+  {
     slug: "price-tracker",
     title: "Price Tracker",
     role: "Next.js · TypeScript · Firebase",
