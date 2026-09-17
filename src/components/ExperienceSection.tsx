@@ -27,8 +27,8 @@ export async function ExperienceSection({ locale }: ExperienceSectionProps) {
                 <li key={i} className="relative">
                   <span className="absolute -left-[29px] top-1.5 h-2.5 w-2.5 rounded-full bg-layer-application" />
                   <p className="font-mono text-xs uppercase text-muted">{entry.period}</p>
-                  <h3 className="mt-1 font-display text-lg font-semibold">{entry.role}</h3>
-                  <p className="font-mono text-sm text-layer-application">{entry.organization}</p>
+                  <h3 className="mt-1 font-display text-lg font-semibold">{entry.organization}</h3>
+                  <p className="font-mono text-sm text-layer-application">{entry.role}</p>
                   <p className="mt-1 text-sm text-foreground/90">{entry.description}</p>
                 </li>
               ))}
