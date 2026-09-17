@@ -22,7 +22,7 @@
   "projects": {
     "eyebrow": "// projects",
     "title": "Selected work",
-    "subtitle": "Newest first — a mix of freelance challenges and earlier projects from when I was learning the ropes. Filter by stack layer using the legend above.",
+    "subtitle": "A curated selection, newest first — real products, client work, and technical challenges. Filter by stack layer using the legend above.",
     "filterAll": "All layers",
     "viewCase": "Read case",
     "visitRepo": "Repository",

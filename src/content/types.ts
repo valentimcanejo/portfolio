@@ -17,7 +17,14 @@ export type TechKey =
   | "nextjs"
   | "tailwind"
   | "go"
-  | "reactnative";
+  | "reactnative"
+  | "kotlin"
+  | "swift"
+  | "nestjs"
+  | "postgresql"
+  | "mongodb"
+  | "firebase"
+  | "vercel";
 
 export interface Project {
   slug: string;

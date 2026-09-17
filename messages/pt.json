@@ -22,7 +22,7 @@
   "projects": {
     "eyebrow": "// projetos",
     "title": "Trabalhos selecionados",
-    "subtitle": "Mais recentes primeiro — uma mistura de desafios de vagas e projetos mais antigos de quando eu estava aprendendo. Filtre pela camada da stack usando a legenda acima.",
+    "subtitle": "Uma seleção curada, mais recentes primeiro — produtos reais, trabalho para clientes e desafios técnicos. Filtre pela camada da stack usando a legenda acima.",
     "filterAll": "Todas as camadas",
     "viewCase": "Ler case",
     "visitRepo": "Repositório",

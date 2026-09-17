@@ -20,6 +20,13 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiExpo,
+  SiKotlin,
+  SiSwift,
+  SiNestjs,
+  SiPostgresql,
+  SiMongodb,
+  SiFirebase,
+  SiVercel,
 } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
 import type { TechKey, SocialKey } from "@/content/types";
@@ -40,6 +47,13 @@ export const techIcons: Record<TechKey, IconType> = {
   tailwind: SiTailwindcss,
   go: FaGolang,
   reactnative: SiExpo,
+  kotlin: SiKotlin,
+  swift: SiSwift,
+  nestjs: SiNestjs,
+  postgresql: SiPostgresql,
+  mongodb: SiMongodb,
+  firebase: SiFirebase,
+  vercel: SiVercel,
 };
 
 export const socialIcons: Record<SocialKey, IconType> = {
