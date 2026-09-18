@@ -19,7 +19,7 @@ export function Header() {
   const github = profile.socials.find((s) => s.key === "github");
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
+    <header className="header-glass sticky top-0 z-40 border-b border-border">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link
           href="/"
