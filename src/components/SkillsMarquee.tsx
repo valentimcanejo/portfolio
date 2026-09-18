@@ -14,19 +14,19 @@ export function SkillsMarquee({ layer, label, items }: SkillsMarqueeProps) {
   return (
     <div>
       <p className={`font-mono text-xs uppercase ${classes.text}`}>{label}</p>
-      <div className="mt-3 flex flex-wrap gap-3">
+      <div className="mt-3 flex flex-wrap gap-2">
         {items.map((item) => {
           const Icon = skillIcons[item];
           const color = skillColors[item];
           return (
             <span
               key={item}
-              className={`flex h-24 w-24 shrink-0 flex-col items-center justify-center gap-2 rounded-md border p-2 text-center transition-colors hover:border-foreground ${classes.border}`}
+              className={`flex h-16 w-16 shrink-0 flex-col items-center justify-center gap-1 rounded-md border p-1 text-center transition-colors hover:border-foreground ${classes.border}`}
             >
               {Icon && (
-                <Icon aria-hidden className="text-3xl" style={color ? { color } : undefined} />
+                <Icon aria-hidden className="text-lg" style={color ? { color } : undefined} />
               )}
-              <span className="text-xs leading-tight">{item}</span>
+              <span className="text-[10px] leading-tight">{item}</span>
             </span>
           );
         })}
