@@ -5,7 +5,7 @@ export const profile: Profile = {
   role: "Fullstack Developer",
   tagline: "I build across the whole stack — from the pixel to the database.",
   bio: [
-    "Full-stack developer based in Natal, Brazil, open to remote. End-to-end track record in React, Next.js, React Native, Node.js, and Firebase — most recently building the Fully app, a health and wellness platform for a Prudential-backed startup, working daily in English with distributed teams across the company.",
+    "Full-stack developer with 4+ years of experience, based in Natal, Brazil, open to remote. End-to-end track record in React, Next.js, React Native, Node.js, and Firebase — most recently building the Fully app, a health and wellness platform for a Prudential-backed startup, working daily in English with distributed teams across the company.",
     "Before that, I led a development team technically for three years at DNA Center, building mission-critical systems — lab queuing, medical document storage, microbiological tracking — used daily by 300+ employees across 40 laboratory units.",
     "Outside of client and employer work, I design and build my own products, like Lumen, a multilingual microlearning app I took from idea through development, design, and marketing myself.",
   ],
