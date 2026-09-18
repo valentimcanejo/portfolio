@@ -77,6 +77,18 @@ export const techIcons: Record<TechKey, IconType> = {
   dart: SiDart,
 };
 
+// Hand-drawn (not emoji) so it renders identically everywhere — Windows
+// fonts commonly fall back flag emoji to plain "BR" text.
+export function BrazilFlagIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 20 14" className={className} aria-hidden role="img">
+      <rect width="20" height="14" rx="1.5" fill="#009c3b" />
+      <polygon points="10,2 18,7 10,12 2,7" fill="#ffdf00" />
+      <circle cx="10" cy="7" r="3.2" fill="#002776" />
+    </svg>
+  );
+}
+
 export const socialIcons: Record<SocialKey, IconType> = {
   github: FaGithub,
   linkedin: FaLinkedin,
