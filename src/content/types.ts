@@ -24,7 +24,9 @@ export type TechKey =
   | "postgresql"
   | "mongodb"
   | "firebase"
-  | "vercel";
+  | "vercel"
+  | "flutter"
+  | "dart";
 
 export interface Project {
   slug: string;

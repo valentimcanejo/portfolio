@@ -44,6 +44,8 @@ import {
   SiStorybook,
   SiFigma,
   SiTauri,
+  SiFlutter,
+  SiDart,
 } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
 import type { TechKey, SocialKey } from "@/content/types";
@@ -71,6 +73,8 @@ export const techIcons: Record<TechKey, IconType> = {
   mongodb: SiMongodb,
   firebase: SiFirebase,
   vercel: SiVercel,
+  flutter: SiFlutter,
+  dart: SiDart,
 };
 
 export const socialIcons: Record<SocialKey, IconType> = {
