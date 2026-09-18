@@ -75,7 +75,7 @@ export async function ExperienceSection({ locale }: ExperienceSectionProps) {
           <SectionHeading eyebrow={s("eyebrow")} title={s("title")} subtitle={s("subtitle")} />
 
           <div className="mt-8 space-y-6">
-            {LAYER_ORDER.map((layer, i) => {
+            {LAYER_ORDER.map((layer) => {
               const group = skills.find((g) => g.layer === layer);
               if (!group) return null;
               return (
@@ -84,7 +84,6 @@ export async function ExperienceSection({ locale }: ExperienceSectionProps) {
                   layer={layer}
                   label={layers(`${layer}.label`)}
                   items={group.items}
-                  reverse={i % 2 === 1}
                 />
               );
             })}
