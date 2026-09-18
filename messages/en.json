@@ -14,8 +14,8 @@
     "legendHint": "Every project below is tagged by the layer(s) it touches."
   },
   "layers": {
-    "interface": { "label": "Interface", "hint": "UI, client-side state, accessibility" },
-    "application": { "label": "Application", "hint": "APIs, business logic, services" },
+    "interface": { "label": "Front-end", "hint": "UI, client-side state, accessibility" },
+    "application": { "label": "Back-end", "hint": "APIs, business logic, services" },
     "data": { "label": "Data", "hint": "Databases, persistence, contracts" },
     "infra": { "label": "Infra", "hint": "Build, deploy, tooling" }
   },

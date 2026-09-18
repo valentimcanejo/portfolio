@@ -14,8 +14,8 @@
     "legendHint": "Todo projeto abaixo é marcado pela(s) camada(s) que envolve."
   },
   "layers": {
-    "interface": { "label": "Interface", "hint": "UI, estado no cliente, acessibilidade" },
-    "application": { "label": "Aplicação", "hint": "APIs, regras de negócio, serviços" },
+    "interface": { "label": "Front-end", "hint": "UI, estado no cliente, acessibilidade" },
+    "application": { "label": "Back-end", "hint": "APIs, regras de negócio, serviços" },
     "data": { "label": "Dados", "hint": "Bancos de dados, persistência, contratos" },
     "infra": { "label": "Infra", "hint": "Build, deploy, ferramentas" }
   },
