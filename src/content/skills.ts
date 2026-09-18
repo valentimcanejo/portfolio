@@ -1,11 +1,15 @@
 import type { SkillGroup } from "@/content/types";
 
 // Sourced from the resume's own skills list. Tech names aren't translated,
-// so this is shared across locales — only the layer labels (from messages)
-// are localized.
+// so this is shared across locales — only the category labels (from
+// messages) are localized.
 export const skills: SkillGroup[] = [
   {
-    layer: "interface",
+    category: "language",
+    items: ["HTML", "CSS", "JavaScript", "TypeScript", "SQL", "Kotlin", "Swift"],
+  },
+  {
+    category: "tool",
     items: [
       "React",
       "Next.js",
@@ -14,20 +18,9 @@ export const skills: SkillGroup[] = [
       "NativeBase / gluestack",
       "Material UI",
       "Tailwind CSS",
-      "HTML",
-      "CSS",
-      "Kotlin",
-      "Swift",
-    ],
-  },
-  {
-    layer: "application",
-    items: ["TypeScript", "JavaScript", "Node.js", "NestJS", "Express"],
-  },
-  {
-    layer: "data",
-    items: [
-      "SQL",
+      "Node.js",
+      "NestJS",
+      "Express",
       "PostgreSQL",
       "MongoDB",
       "SQL Server",
@@ -35,11 +28,6 @@ export const skills: SkillGroup[] = [
       "Supabase",
       "Prisma",
       "Sequelize",
-    ],
-  },
-  {
-    layer: "infra",
-    items: [
       "Git",
       "GitHub Actions",
       "Vercel",

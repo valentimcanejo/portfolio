@@ -47,7 +47,11 @@
   "skills": {
     "eyebrow": "// skills",
     "title": "Toolbox",
-    "subtitle": "Organized by the layer of the stack each tool lives in."
+    "subtitle": "Organized by type — languages first, then the frameworks and tools built on top of them.",
+    "categories": {
+      "language": "Languages",
+      "tool": "Tools & Frameworks"
+    }
   },
   "contact": {
     "eyebrow": "// contact",

@@ -1,15 +1,22 @@
-import type { Layer } from "@/content/types";
-import { layerClasses } from "@/lib/layers";
+import type { SkillCategory } from "@/content/types";
 import { skillIcons, skillColors } from "./icons";
 
+// Reuses two of the stack-layer accent colors just as generic visual
+// variety between the two groups — not a claim that languages "are" the
+// interface layer or tools "are" the application layer.
+const categoryClasses: Record<SkillCategory, { text: string; border: string }> = {
+  language: { text: "text-layer-interface", border: "border-layer-interface" },
+  tool: { text: "text-layer-application", border: "border-layer-application" },
+};
+
 interface SkillsMarqueeProps {
-  layer: Layer;
+  category: SkillCategory;
   label: string;
   items: string[];
 }
 
-export function SkillsMarquee({ layer, label, items }: SkillsMarqueeProps) {
-  const classes = layerClasses[layer];
+export function SkillsMarquee({ category, label, items }: SkillsMarqueeProps) {
+  const classes = categoryClasses[category];
 
   return (
     <div>

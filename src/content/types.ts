@@ -62,8 +62,10 @@ export interface Profile {
   socials: { key: SocialKey; url: string }[];
 }
 
+export type SkillCategory = "language" | "tool";
+
 export interface SkillGroup {
-  layer: Layer;
+  category: SkillCategory;
   items: string[];
 }
 
