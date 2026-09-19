@@ -112,7 +112,7 @@ export const projects: Project[] = [
     summary:
       "Um projeto para um cliente real: um site feito para uma barbearia, hoje no ar como a página do Google Business da loja.",
     layers: ["interface"],
-    tech: ["nextjs", "typescript"],
+    tech: ["nextjs", "typescript", "tailwind"],
     repoUrl: "https://github.com/valentimcanejo/barber-shop",
     demoUrl: "https://barber-shop-alpha-eight.vercel.app",
     year: 2023,

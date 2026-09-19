@@ -111,7 +111,7 @@ export const projects: Project[] = [
     summary:
       "A real client project: a website built for a barbershop, now live as the shop's Google Business listing page.",
     layers: ["interface"],
-    tech: ["nextjs", "typescript"],
+    tech: ["nextjs", "typescript", "tailwind"],
     repoUrl: "https://github.com/valentimcanejo/barber-shop",
     demoUrl: "https://barber-shop-alpha-eight.vercel.app",
     year: 2023,
