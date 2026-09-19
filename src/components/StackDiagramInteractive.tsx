@@ -4,7 +4,6 @@ import { useRef } from "react";
 import type { Layer } from "@/content/types";
 import { layerClasses } from "@/lib/layers";
 import { layerIcons } from "./icons";
-import { useProjectFilter } from "./ProjectFilterProvider";
 
 interface LayerItem {
   layer: Layer;
@@ -33,7 +32,20 @@ export function StackDiagramInteractive({
 }: StackDiagramInteractiveProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const bandRefs = useRef<(HTMLAnchorElement | null)[]>([]);
-  const { setActiveLayer } = useProjectFilter();
+
+  function handleLegendClick(e: React.MouseEvent, layer: Layer) {
+    const target = document.getElementById(`skill-group-${layer}`);
+    if (!target) return;
+    e.preventDefault();
+
+    target.scrollIntoView({ behavior: "smooth", block: "center" });
+    target.style.boxShadow = `0 0 0 2px ${GLOW_VAR[layer]}`;
+    target.style.backgroundColor = `color-mix(in srgb, ${GLOW_VAR[layer]} 10%, transparent)`;
+    window.setTimeout(() => {
+      target.style.boxShadow = "";
+      target.style.backgroundColor = "";
+    }, 1600);
+  }
 
   function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -77,8 +89,8 @@ export function StackDiagramInteractive({
           return (
             <a
               key={layer}
-              href="#projects"
-              onClick={() => setActiveLayer(layer)}
+              href={`#skill-group-${layer}`}
+              onClick={(e) => handleLegendClick(e, layer)}
               ref={(el) => {
                 bandRefs.current[i] = el;
               }}

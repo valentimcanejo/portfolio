@@ -22,7 +22,7 @@ export function SkillsMarquee({ category, label, items }: SkillsMarqueeProps) {
   const classes = categoryClasses[category];
 
   return (
-    <div>
+    <div id={`skill-group-${category}`} className="scroll-mt-24 rounded-md transition-colors duration-300">
       <p className={`font-mono text-xs uppercase ${classes.text}`}>{label}</p>
       <div className="mt-3 flex flex-wrap gap-2">
         {items.map((item) => {

@@ -1,10 +1,9 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import type { Project } from "@/content/types";
+import type { Layer, Project } from "@/content/types";
 import { LAYER_ORDER, layerClasses } from "@/lib/layers";
-import { useProjectFilter } from "./ProjectFilterProvider";
 import { SectionHeading } from "./ui/SectionHeading";
 import { ProjectCard } from "./ProjectCard";
 import { Reveal } from "./Reveal";
@@ -16,7 +15,7 @@ interface ProjectsSectionProps {
 export function ProjectsSection({ projects }: ProjectsSectionProps) {
   const t = useTranslations("projects");
   const layers = useTranslations("layers");
-  const { activeLayer: active, setActiveLayer: setActive } = useProjectFilter();
+  const [active, setActive] = useState<Layer | null>(null);
 
   const filtered = useMemo(
     () => (active ? projects.filter((p) => p.layers.includes(active)) : projects),
