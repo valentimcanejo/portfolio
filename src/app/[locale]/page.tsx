@@ -7,6 +7,7 @@ import { StatsSection } from "@/components/StatsSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { Contact } from "@/components/Contact";
+import { ProjectFilterProvider } from "@/components/ProjectFilterProvider";
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { locale } = await params;
@@ -18,10 +19,12 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
   return (
     <div id="top">
-      <Hero locale={locale} />
-      <StatsSection locale={locale} />
-      <ExperienceSection locale={locale} />
-      <ProjectsSection projects={projects} />
+      <ProjectFilterProvider>
+        <Hero locale={locale} />
+        <StatsSection locale={locale} />
+        <ExperienceSection locale={locale} />
+        <ProjectsSection projects={projects} />
+      </ProjectFilterProvider>
       <Contact locale={locale} />
     </div>
   );

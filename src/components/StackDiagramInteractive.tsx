@@ -3,6 +3,8 @@
 import { useRef } from "react";
 import type { Layer } from "@/content/types";
 import { layerClasses } from "@/lib/layers";
+import { layerIcons } from "./icons";
+import { useProjectFilter } from "./ProjectFilterProvider";
 
 interface LayerItem {
   layer: Layer;
@@ -30,7 +32,8 @@ export function StackDiagramInteractive({
   legendHint,
 }: StackDiagramInteractiveProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const bandRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const bandRefs = useRef<(HTMLAnchorElement | null)[]>([]);
+  const { setActiveLayer } = useProjectFilter();
 
   function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -70,22 +73,28 @@ export function StackDiagramInteractive({
       <div className="flex flex-col gap-3">
         {layers.map(({ layer, label, hint }, i) => {
           const classes = layerClasses[layer];
+          const Icon = layerIcons[layer];
           return (
-            <div
+            <a
               key={layer}
+              href="#projects"
+              onClick={() => setActiveLayer(layer)}
               ref={(el) => {
                 bandRefs.current[i] = el;
               }}
-              className={`animate-stack-in rounded-sm border-l-4 bg-foreground/[0.03] px-4 py-3 transition-[transform,box-shadow,background-color] duration-200 ease-out will-change-transform hover:bg-foreground/[0.06] ${classes.border}`}
+              className={`animate-stack-in block rounded-sm border-l-4 bg-foreground/[0.03] px-4 py-3 transition-[transform,box-shadow,background-color] duration-200 ease-out will-change-transform hover:bg-foreground/[0.06] ${classes.border}`}
               style={{ animationDelay: `${i * 0.1}s` }}
             >
               <div className="flex items-baseline justify-between gap-4">
-                <span className={`font-mono text-xs uppercase tracking-wide ${classes.text}`}>
+                <span
+                  className={`flex items-center gap-1.5 font-mono text-xs uppercase tracking-wide ${classes.text}`}
+                >
+                  <Icon aria-hidden />
                   {label}
                 </span>
               </div>
               <p className="mt-1 text-sm text-muted">{hint}</p>
-            </div>
+            </a>
           );
         })}
       </div>

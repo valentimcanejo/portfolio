@@ -12,6 +12,9 @@ import {
   FaGitAlt,
   FaDatabase,
   FaPuzzlePiece,
+  FaDisplay,
+  FaServer,
+  FaGear,
 } from "react-icons/fa6";
 import {
   SiTypescript,
@@ -48,7 +51,14 @@ import {
   SiDart,
 } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
-import type { TechKey, SocialKey } from "@/content/types";
+import type { TechKey, SocialKey, Layer } from "@/content/types";
+
+export const layerIcons: Record<Layer, IconType> = {
+  interface: FaDisplay,
+  application: FaServer,
+  data: FaDatabase,
+  infra: FaGear,
+};
 
 export const techIcons: Record<TechKey, IconType> = {
   react: FaReact,
