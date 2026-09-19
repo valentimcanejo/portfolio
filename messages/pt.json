@@ -47,10 +47,9 @@
   "skills": {
     "eyebrow": "// habilidades",
     "title": "Caixa de ferramentas",
-    "subtitle": "Organizadas por tipo — primeiro as linguagens, depois os frameworks e ferramentas construídos sobre elas.",
+    "subtitle": "Linguagens primeiro, depois organizadas pela camada da stack em que cada ferramenta atua.",
     "categories": {
-      "language": "Linguagens",
-      "tool": "Ferramentas & Frameworks"
+      "language": "Linguagens"
     }
   },
   "contact": {

@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import type { AppLocale } from "@/content/types";
 import { getExperience, getEducation, skills } from "@/content";
 import type { SkillCategory } from "@/content/types";
+import { LAYER_ORDER } from "@/lib/layers";
 import { SectionHeading } from "./ui/SectionHeading";
 import { Reveal } from "./Reveal";
 import { SkillsMarquee } from "./SkillsMarquee";
@@ -13,6 +14,7 @@ interface ExperienceSectionProps {
 export async function ExperienceSection({ locale }: ExperienceSectionProps) {
   const t = await getTranslations({ locale, namespace: "experience" });
   const s = await getTranslations({ locale, namespace: "skills" });
+  const layers = await getTranslations({ locale, namespace: "layers" });
   const experience = getExperience(locale);
   const education = getEducation(locale);
 
@@ -74,16 +76,13 @@ export async function ExperienceSection({ locale }: ExperienceSectionProps) {
           <SectionHeading eyebrow={s("eyebrow")} title={s("title")} subtitle={s("subtitle")} />
 
           <div className="mt-8 space-y-6">
-            {(["language", "tool"] as SkillCategory[]).map((category) => {
+            {(["language", ...LAYER_ORDER] as SkillCategory[]).map((category) => {
               const group = skills.find((g) => g.category === category);
               if (!group) return null;
+              const label =
+                category === "language" ? s("categories.language") : layers(`${category}.label`);
               return (
-                <SkillsMarquee
-                  key={category}
-                  category={category}
-                  label={s(`categories.${category}`)}
-                  items={group.items}
-                />
+                <SkillsMarquee key={category} category={category} label={label} items={group.items} />
               );
             })}
           </div>

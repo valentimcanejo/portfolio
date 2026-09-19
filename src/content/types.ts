@@ -62,7 +62,7 @@ export interface Profile {
   socials: { key: SocialKey; url: string }[];
 }
 
-export type SkillCategory = "language" | "tool";
+export type SkillCategory = "language" | Layer;
 
 export interface SkillGroup {
   category: SkillCategory;
