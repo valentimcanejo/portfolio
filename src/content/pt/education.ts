@@ -2,7 +2,7 @@ import type { ExperienceEntry } from "@/content/types";
 
 export const education: ExperienceEntry[] = [
   {
-    role: "Análise e Desenvolvimento de Sistemas",
+    role: "Bacharelado em Análise e Desenvolvimento de Sistemas",
     organization: "IFRN — Instituto Federal do Rio Grande do Norte (Natal Central)",
     organizationUrl: "https://portal.ifrn.edu.br/campus/natalcentral/",
     period: "2017 – 2023",
