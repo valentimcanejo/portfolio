@@ -34,6 +34,19 @@ export async function ExperienceSection({ locale }: ExperienceSectionProps) {
                   <h3 className="mt-1 font-display text-lg font-semibold">{entry.organization}</h3>
                   <p className="font-mono text-sm text-layer-application">{entry.role}</p>
                   <p className="mt-1 text-sm text-foreground/90">{entry.description}</p>
+                  {entry.highlights && entry.highlights.length > 0 && (
+                    <details className="group mt-2">
+                      <summary className="cursor-pointer list-none font-mono text-xs text-layer-application underline decoration-dotted underline-offset-4 hover:text-foreground [&::-webkit-details-marker]:hidden">
+                        <span className="group-open:hidden">{t("readMore")}</span>
+                        <span className="hidden group-open:inline">{t("readLess")}</span>
+                      </summary>
+                      <ul className="mt-2 list-disc space-y-1 pl-4 text-sm text-foreground/90">
+                        {entry.highlights.map((highlight, hi) => (
+                          <li key={hi}>{highlight}</li>
+                        ))}
+                      </ul>
+                    </details>
+                  )}
                 </li>
               ))}
             </ol>

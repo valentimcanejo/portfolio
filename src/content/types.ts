@@ -49,6 +49,7 @@ export interface ExperienceEntry {
   organizationUrl?: string;
   period: string;
   description: string;
+  highlights?: string[];
 }
 
 export type SocialKey = "github" | "linkedin" | "instagram" | "email";

@@ -55,7 +55,9 @@
     "title": "Linha do tempo",
     "subtitle": "Cargos e o trabalho por trás deles.",
     "empty": "O histórico profissional ainda está sendo escrito — me contate e explico tudo diretamente.",
-    "educationTitle": "Formação acadêmica"
+    "educationTitle": "Formação acadêmica",
+    "readMore": "Saber mais",
+    "readLess": "Ver menos"
   },
   "skills": {
     "eyebrow": "// habilidades",
