@@ -14,10 +14,10 @@
     "legendHint": "Every project below is tagged by the layer(s) it touches."
   },
   "layers": {
-    "interface": { "label": "Front-end", "hint": "UI, client-side state, accessibility" },
-    "application": { "label": "Back-end", "hint": "APIs, business logic, services" },
-    "data": { "label": "Data", "hint": "Databases, persistence, contracts" },
-    "infra": { "label": "Infra", "hint": "Build, deploy, tooling" }
+    "interface": { "label": "Front-end", "hint": "Design systems, micro-frontends, accessibility" },
+    "application": { "label": "Back-end", "hint": "APIs, authentication, microservices" },
+    "data": { "label": "Data", "hint": "SQL, NoSQL, cloud storage" },
+    "infra": { "label": "Infra", "hint": "CI/CD, GitHub Actions, Vercel deploys" }
   },
   "projects": {
     "eyebrow": "// projects",

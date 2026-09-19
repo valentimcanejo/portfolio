@@ -14,10 +14,10 @@
     "legendHint": "Todo projeto abaixo é marcado pela(s) camada(s) que envolve."
   },
   "layers": {
-    "interface": { "label": "Front-end", "hint": "UI, estado no cliente, acessibilidade" },
-    "application": { "label": "Back-end", "hint": "APIs, regras de negócio, serviços" },
-    "data": { "label": "Dados", "hint": "Bancos de dados, persistência, contratos" },
-    "infra": { "label": "Infra", "hint": "Build, deploy, ferramentas" }
+    "interface": { "label": "Front-end", "hint": "Design systems, micro-frontends, acessibilidade" },
+    "application": { "label": "Back-end", "hint": "APIs, autenticação, microsserviços" },
+    "data": { "label": "Dados", "hint": "SQL, NoSQL, armazenamento em nuvem" },
+    "infra": { "label": "Infra", "hint": "CI/CD, GitHub Actions, deploys na Vercel" }
   },
   "projects": {
     "eyebrow": "// projetos",
