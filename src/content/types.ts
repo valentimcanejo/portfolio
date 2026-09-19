@@ -26,7 +26,8 @@ export type TechKey =
   | "firebase"
   | "vercel"
   | "flutter"
-  | "dart";
+  | "dart"
+  | "gluestack";
 
 export interface Project {
   slug: string;

@@ -10,7 +10,7 @@ export const projects: Project[] = [
     summary:
       "A multilingual (PT/EN/ES) mobile microlearning app: 10–15 minute sessions across 12 knowledge tracks (philosophy, history, psychology, science, and more), designed and built end to end — product, UI design, development, and marketing.",
     layers: ["interface", "application", "data"],
-    tech: ["reactnative"],
+    tech: ["reactnative", "typescript", "gluestack", "firebase"],
     demoUrl: "https://play.google.com/store/apps/details?id=com.valentimcanejo.lumen",
     notes: [
       "Lesson cycle: short cards, a quiz to reinforce it, then a summary.",

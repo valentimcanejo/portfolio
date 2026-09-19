@@ -75,6 +75,7 @@ export const techIcons: Record<TechKey, IconType> = {
   vercel: SiVercel,
   flutter: SiFlutter,
   dart: SiDart,
+  gluestack: FaPuzzlePiece,
 };
 
 // Hand-drawn (not emoji) so it renders identically everywhere — Windows

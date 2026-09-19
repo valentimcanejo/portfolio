@@ -11,7 +11,7 @@ export const projects: Project[] = [
     summary:
       "Um app mobile de microlearning multilíngue (PT/EN/ES): sessões de 10 a 15 minutos em 12 trilhas de conhecimento (filosofia, história, psicologia, ciência e mais), idealizado e construído de ponta a ponta — produto, design de interface, desenvolvimento e marketing.",
     layers: ["interface", "application", "data"],
-    tech: ["reactnative"],
+    tech: ["reactnative", "typescript", "gluestack", "firebase"],
     demoUrl: "https://play.google.com/store/apps/details?id=com.valentimcanejo.lumen",
     notes: [
       "Ciclo da lição: cartões curtos, um quiz para fixar o conteúdo e um resumo no final.",
