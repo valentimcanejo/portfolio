@@ -14,10 +14,22 @@
     "legendHint": "Every project below is tagged by the layer(s) it touches."
   },
   "layers": {
-    "interface": { "label": "Front-end", "hint": "Design systems, micro-frontends, accessibility" },
-    "application": { "label": "Back-end", "hint": "APIs, authentication, microservices" },
-    "data": { "label": "Data", "hint": "SQL, NoSQL, cloud storage" },
-    "infra": { "label": "Infra", "hint": "CI/CD, GitHub Actions, Vercel deploys" }
+    "interface": {
+      "label": "Front-end",
+      "hint": "Design systems, micro-frontends, accessibility, native Kotlin/Swift modules"
+    },
+    "application": {
+      "label": "Back-end",
+      "hint": "APIs, authentication, microservices, real-time systems"
+    },
+    "data": {
+      "label": "Data",
+      "hint": "SQL, NoSQL, cloud storage, ORMs (Prisma/Sequelize)"
+    },
+    "infra": {
+      "label": "Infra",
+      "hint": "CI/CD, automated testing, Vercel deploys, Git, agile process, desktop packaging"
+    }
   },
   "projects": {
     "eyebrow": "// projects",
