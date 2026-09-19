@@ -27,7 +27,8 @@
     "viewCase": "Read case",
     "visitRepo": "Repository",
     "visitDemo": "Live demo",
-    "empty": "No projects tagged to this layer yet."
+    "empty": "No projects tagged to this layer yet.",
+    "showAll": "Show all projects"
   },
   "projectCase": {
     "back": "Back to projects",

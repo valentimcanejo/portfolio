@@ -69,7 +69,16 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
             ))}
           </div>
         ) : (
-          <p className="mt-8 text-sm text-muted">{t("empty")}</p>
+          <div className="mt-8">
+            <p className="text-sm text-muted">{t("empty")}</p>
+            <button
+              type="button"
+              onClick={() => setActive(null)}
+              className="mt-3 font-mono text-sm text-foreground underline decoration-layer-application decoration-2 underline-offset-4 hover:text-layer-application"
+            >
+              {t("showAll")}
+            </button>
+          </div>
         )}
       </div>
     </section>

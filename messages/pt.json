@@ -27,7 +27,8 @@
     "viewCase": "Ler case",
     "visitRepo": "Repositório",
     "visitDemo": "Demo ao vivo",
-    "empty": "Ainda não há projetos marcados nessa camada."
+    "empty": "Ainda não há projetos marcados nessa camada.",
+    "showAll": "Ver todos os projetos"
   },
   "projectCase": {
     "back": "Voltar aos projetos",

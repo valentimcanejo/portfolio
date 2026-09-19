@@ -27,7 +27,7 @@ export const projects: Project[] = [
     role: "Next.js · TypeScript · Firebase",
     summary:
       "Uma ferramenta de monitoramento de preços que acompanha produtos na Amazon, Mercado Livre, Magazine Luiza e KaBuM!, fazendo scraping diário e enviando um alerta no Telegram sempre que o preço cai abaixo de uma meta.",
-    layers: ["interface", "application", "data"],
+    layers: ["interface", "application", "data", "infra"],
     tech: ["nextjs", "typescript", "firebase", "vercel"],
     repoUrl: "https://github.com/valentimcanejo/price-tracker",
     notes: [
