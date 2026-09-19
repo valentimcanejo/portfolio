@@ -6,6 +6,7 @@ import { LAYER_ORDER } from "@/lib/layers";
 import { SectionHeading } from "./ui/SectionHeading";
 import { Reveal } from "./Reveal";
 import { SkillsMarquee } from "./SkillsMarquee";
+import { FaGraduationCap } from "react-icons/fa6";
 
 interface ExperienceSectionProps {
   locale: AppLocale;
@@ -63,7 +64,10 @@ export async function ExperienceSection({ locale }: ExperienceSectionProps) {
                         entry.organization
                       )}
                     </h3>
-                    <p className="font-mono text-sm text-layer-application">{entry.role}</p>
+                    <p className="flex items-center gap-1.5 font-mono text-sm text-layer-application">
+                      <FaGraduationCap aria-hidden />
+                      {entry.role}
+                    </p>
                     <p className="mt-1 text-sm text-foreground/90">{entry.description}</p>
                   </li>
                 ))}
