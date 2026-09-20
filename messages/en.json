@@ -11,7 +11,7 @@
     "ctaProjects": "View projects",
     "ctaContact": "Get in touch",
     "legendTitle": "the stack, exploded",
-    "legendHint": "Every project below is tagged by the layer(s) it touches."
+    "legendHint": "Click a layer to jump to the tech behind it."
   },
   "layers": {
     "interface": {

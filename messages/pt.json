@@ -11,7 +11,7 @@
     "ctaProjects": "Ver projetos",
     "ctaContact": "Falar comigo",
     "legendTitle": "a stack, em camadas",
-    "legendHint": "Todo projeto abaixo é marcado pela(s) camada(s) que envolve."
+    "legendHint": "Clique numa camada para ver as tecnologias que uso nela."
   },
   "layers": {
     "interface": {
