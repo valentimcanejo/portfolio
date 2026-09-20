@@ -10,7 +10,7 @@
     "eyebrow": "// desenvolvedor fullstack · web & mobile",
     "ctaProjects": "Ver projetos",
     "ctaContact": "Falar comigo",
-    "legendTitle": "a stack, explodida",
+    "legendTitle": "a stack, em vista explodida",
     "legendHint": "Todo projeto abaixo é marcado pela(s) camada(s) que envolve."
   },
   "layers": {
@@ -34,13 +34,10 @@
   "projects": {
     "eyebrow": "// projetos",
     "title": "Trabalhos selecionados",
-    "subtitle": "Uma seleção curada, mais recentes primeiro — produtos reais, trabalho para clientes e desafios técnicos. Filtre pela camada da stack usando a legenda acima.",
-    "filterAll": "Todas as camadas",
+    "subtitle": "Uma seleção curada de produtos reais, trabalho para clientes e desafios técnicos.",
     "viewCase": "Ler case",
     "visitRepo": "Repositório",
-    "visitDemo": "Demo ao vivo",
-    "empty": "Ainda não há projetos marcados nessa camada.",
-    "showAll": "Ver todos os projetos"
+    "visitDemo": "Demo ao vivo"
   },
   "projectCase": {
     "back": "Voltar aos projetos",

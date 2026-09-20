@@ -34,13 +34,10 @@
   "projects": {
     "eyebrow": "// projects",
     "title": "Selected work",
-    "subtitle": "A curated selection, newest first — real products, client work, and technical challenges. Filter by stack layer using the legend above.",
-    "filterAll": "All layers",
+    "subtitle": "A curated selection of real products, client work, and technical challenges.",
     "viewCase": "Read case",
     "visitRepo": "Repository",
-    "visitDemo": "Live demo",
-    "empty": "No projects tagged to this layer yet.",
-    "showAll": "Show all projects"
+    "visitDemo": "Live demo"
   },
   "projectCase": {
     "back": "Back to projects",
