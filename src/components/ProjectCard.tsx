@@ -72,42 +72,44 @@ export function ProjectCard({ project }: ProjectCardProps) {
             ),
           )}
         </div>
+      </div>
 
-        <div className="mt-4 flex flex-wrap gap-2 text-lg text-muted">
+      <div>
+        <div className="flex flex-wrap gap-2 text-lg text-muted">
           {project.tech.map((tech) => {
             const Icon = techIcons[tech];
             return <Icon key={tech} aria-hidden />;
           })}
         </div>
-      </div>
 
-      <div className="mt-5 flex flex-wrap items-center gap-4 font-mono text-sm">
-        <Link
-          href={`/projects/${project.slug}`}
-          className="text-foreground underline decoration-layer-application decoration-2 underline-offset-4 hover:text-layer-application"
-        >
-          {t("viewCase")}
-        </Link>
-        {project.repoUrl && (
-          <a
-            href={project.repoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-muted hover:text-foreground"
+        <div className="mt-3 flex flex-wrap items-center gap-4 font-mono text-sm">
+          <Link
+            href={`/projects/${project.slug}`}
+            className="text-foreground underline decoration-layer-application decoration-2 underline-offset-4 hover:text-layer-application"
           >
-            <FaGithub aria-hidden /> {t("visitRepo")}
-          </a>
-        )}
-        {project.demoUrl && (
-          <a
-            href={project.demoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-muted hover:text-foreground"
-          >
-            <FaArrowUpRightFromSquare aria-hidden size={12} /> {t("visitDemo")}
-          </a>
-        )}
+            {t("viewCase")}
+          </Link>
+          {project.repoUrl && (
+            <a
+              href={project.repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-muted hover:text-foreground"
+            >
+              <FaGithub aria-hidden /> {t("visitRepo")}
+            </a>
+          )}
+          {project.demoUrl && (
+            <a
+              href={project.demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-muted hover:text-foreground"
+            >
+              <FaArrowUpRightFromSquare aria-hidden size={12} /> {t("visitDemo")}
+            </a>
+          )}
+        </div>
       </div>
     </article>
   );
