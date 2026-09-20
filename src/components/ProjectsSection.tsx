@@ -60,7 +60,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
         </div>
 
         {filtered.length > 0 ? (
-          <div className="mt-8 grid gap-5 sm:grid-cols-2">
+          <div className="mt-8 grid gap-x-5 gap-y-8 sm:grid-cols-2">
             {filtered.map((project, i) => (
               <Reveal key={project.slug} delay={Math.min(i, 5) * 60}>
                 <ProjectCard project={project} />
