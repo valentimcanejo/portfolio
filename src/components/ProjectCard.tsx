@@ -74,7 +74,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </div>
 
-      <div>
+      <div className="mt-4">
         <div className="flex flex-wrap gap-3 text-2xl text-muted">
           {project.tech.map((tech) => {
             const Icon = techIcons[tech];
