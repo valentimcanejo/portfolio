@@ -73,7 +73,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           )}
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2 text-lg text-muted">
+        <div className="mt-4 flex flex-wrap gap-3 text-2xl text-muted">
           {project.tech.map((tech) => {
             const Icon = techIcons[tech];
             return <Icon key={tech} aria-hidden />;
