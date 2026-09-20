@@ -11,7 +11,7 @@ import {
   FaGolang,
   FaGitAlt,
   FaDatabase,
-  FaPuzzlePiece,
+  FaLayerGroup,
   FaDisplay,
   FaServer,
   FaGear,
@@ -85,7 +85,7 @@ export const techIcons: Record<TechKey, IconType> = {
   vercel: SiVercel,
   flutter: SiFlutter,
   dart: SiDart,
-  gluestack: FaPuzzlePiece,
+  gluestack: FaLayerGroup,
 };
 
 // Hand-drawn (not emoji) so it renders identically everywhere — Windows
@@ -116,7 +116,7 @@ export const skillIcons: Record<string, IconType> = {
   "Next.js": SiNextdotjs,
   "React Native": FaReact,
   Expo: SiExpo,
-  "NativeBase / gluestack": FaPuzzlePiece,
+  "NativeBase / gluestack": FaLayerGroup,
   "Material UI": SiMaterialdesign,
   "Tailwind CSS": SiTailwindcss,
   HTML: SiHtml5,
