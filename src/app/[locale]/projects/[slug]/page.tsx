@@ -7,7 +7,11 @@ import { Link } from "@/i18n/navigation";
 import { getProject, getProfile } from "@/content";
 import { techIcons } from "@/components/icons";
 import { LAYER_ORDER, layerClasses } from "@/lib/layers";
-import { FaGithub, FaArrowUpRightFromSquare, FaArrowLeft } from "react-icons/fa6";
+import {
+  FaGithub,
+  FaArrowUpRightFromSquare,
+  FaArrowLeft,
+} from "react-icons/fa6";
 
 interface ProjectPageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -59,7 +63,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </h1>
         <span className="font-mono text-sm text-muted">{project.year}</span>
       </div>
-      <p className="mt-2 font-mono text-sm text-layer-application">{project.role}</p>
+      <p className="mt-2 font-mono text-sm text-layer-application">
+        {project.role}
+      </p>
 
       <p
         className={`mt-6 text-lg ${project.pending ? "italic text-muted" : "text-foreground/90"}`}
@@ -69,21 +75,27 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
       <div className="mt-10 grid gap-8 sm:grid-cols-2">
         <div>
-          <h2 className="font-mono text-xs uppercase text-muted">{t("layersTitle")}</h2>
+          <h2 className="font-mono text-xs uppercase text-muted">
+            {t("layersTitle")}
+          </h2>
           <div className="mt-2 flex flex-wrap gap-2">
-            {LAYER_ORDER.filter((layer) => project.layers.includes(layer)).map((layer) => (
-              <span
-                key={layer}
-                className={`rounded-sm border px-2 py-0.5 font-mono text-[11px] uppercase ${layerClasses[layer].border} ${layerClasses[layer].text}`}
-              >
-                {layers(`${layer}.label`)}
-              </span>
-            ))}
+            {LAYER_ORDER.filter((layer) => project.layers.includes(layer)).map(
+              (layer) => (
+                <span
+                  key={layer}
+                  className={`rounded-sm border px-2 py-0.5 font-mono text-[11px] uppercase ${layerClasses[layer].border} ${layerClasses[layer].text}`}
+                >
+                  {layers(`${layer}.label`)}
+                </span>
+              ),
+            )}
           </div>
         </div>
 
         <div>
-          <h2 className="font-mono text-xs uppercase text-muted">{t("stackTitle")}</h2>
+          <h2 className="font-mono text-xs uppercase text-muted">
+            {t("stackTitle")}
+          </h2>
           <div className="mt-2 flex flex-wrap gap-3 text-2xl text-muted">
             {project.tech.map((tech) => {
               const Icon = techIcons[tech];
@@ -94,7 +106,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </div>
 
       <div className="mt-10">
-        <h2 className="font-mono text-xs uppercase text-muted">{t("notesTitle")}</h2>
+        <h2 className="font-mono text-xs uppercase text-muted">
+          {t("notesTitle")}
+        </h2>
         {project.notes && project.notes.length > 0 ? (
           <ul className="mt-3 list-disc space-y-2 pl-5 text-foreground/90">
             {project.notes.map((note, i) => (
@@ -107,7 +121,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </div>
 
       <div className="mt-10 border-t border-border pt-6">
-        <h2 className="font-mono text-xs uppercase text-muted">{t("linksTitle")}</h2>
+        <h2 className="font-mono text-xs uppercase text-muted">
+          {t("linksTitle")}
+        </h2>
         <div className="mt-3 flex flex-wrap gap-5 font-mono text-sm">
           {project.repoUrl && (
             <a
@@ -126,10 +142,14 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-foreground hover:text-layer-application"
             >
-              <FaArrowUpRightFromSquare size={12} aria-hidden /> {p("visitDemo")}
+              <FaArrowUpRightFromSquare size={12} aria-hidden />{" "}
+              {p("visitDemo")}
             </a>
           )}
-          <a href={`mailto:${profile.email}`} className="text-muted hover:text-foreground">
+          <a
+            href={`mailto:${profile.email}`}
+            className="text-muted hover:text-foreground"
+          >
             {profile.email}
           </a>
         </div>
