@@ -49,44 +49,43 @@ export async function ExperienceSection({ locale }: ExperienceSectionProps) {
                   )}
                 </li>
               ))}
-
-              {education.length > 0 && (
-                <li className="pt-4">
-                  <h3 className="font-display text-xl font-semibold tracking-tight">
-                    {t("educationTitle")}
-                  </h3>
-                  <ul className="mt-4 space-y-6">
-                    {education.map((entry, i) => (
-                      <li key={i} className="relative">
-                        <span className="absolute -left-[29px] top-1.5 h-2.5 w-2.5 rounded-full bg-layer-application" />
-                        <p className="font-mono text-xs uppercase text-muted">{entry.period}</p>
-                        <h3 className="mt-1 font-display text-lg font-semibold">
-                          {entry.organizationUrl ? (
-                            <a
-                              href={entry.organizationUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="underline decoration-layer-application decoration-2 underline-offset-4 hover:text-layer-application"
-                            >
-                              {entry.organization}
-                            </a>
-                          ) : (
-                            entry.organization
-                          )}
-                        </h3>
-                        <p className="flex items-center gap-1.5 font-mono text-sm text-layer-application">
-                          <FaGraduationCap aria-hidden />
-                          {entry.role}
-                        </p>
-                        <p className="mt-1 text-sm text-foreground/90">{entry.description}</p>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              )}
             </ol>
           ) : (
             <p className="mt-8 text-sm text-muted">{t("empty")}</p>
+          )}
+
+          {education.length > 0 && (
+            <div className="mt-10 border-t border-border pt-6">
+              <h3 className="font-display text-xl font-semibold tracking-tight">
+                {t("educationTitle")}
+              </h3>
+              <ul className="mt-4 space-y-6">
+                {education.map((entry, i) => (
+                  <li key={i}>
+                    <p className="font-mono text-xs uppercase text-muted">{entry.period}</p>
+                    <h3 className="mt-1 font-display text-lg font-semibold">
+                      {entry.organizationUrl ? (
+                        <a
+                          href={entry.organizationUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline decoration-layer-application decoration-2 underline-offset-4 hover:text-layer-application"
+                        >
+                          {entry.organization}
+                        </a>
+                      ) : (
+                        entry.organization
+                      )}
+                    </h3>
+                    <p className="flex items-center gap-1.5 font-mono text-sm text-layer-application">
+                      <FaGraduationCap aria-hidden />
+                      {entry.role}
+                    </p>
+                    <p className="mt-1 text-sm text-foreground/90">{entry.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
         </Reveal>
 
