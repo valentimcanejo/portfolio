@@ -41,11 +41,9 @@ export function StackDiagramInteractive({
     target.scrollIntoView({ behavior: "smooth", block: "center" });
 
     window.setTimeout(() => {
-      target.style.boxShadow = `0 0 28px -6px ${GLOW_VAR[layer]}`;
-      target.style.backgroundColor = `color-mix(in srgb, ${GLOW_VAR[layer]} 6%, transparent)`;
+      target.style.boxShadow = `0 0 60px 10px color-mix(in srgb, ${GLOW_VAR[layer]} 18%, transparent)`;
       window.setTimeout(() => {
         target.style.boxShadow = "";
-        target.style.backgroundColor = "";
       }, 1400);
     }, 350);
   }

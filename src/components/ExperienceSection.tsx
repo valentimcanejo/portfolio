@@ -92,7 +92,7 @@ export async function ExperienceSection({ locale }: ExperienceSectionProps) {
         <Reveal delay={120}>
           <SectionHeading eyebrow={s("eyebrow")} title={s("title")} subtitle={s("subtitle")} />
 
-          <div className="mt-8 space-y-6">
+          <div className="mt-8 flex flex-col gap-10">
             {(["language", ...LAYER_ORDER] as SkillCategory[]).map((category) => {
               const group = skills.find((g) => g.category === category);
               if (!group) return null;
