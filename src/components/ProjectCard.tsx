@@ -41,7 +41,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="group flex h-full min-h-[21rem] flex-col justify-between rounded-sm border border-border bg-foreground/[0.02] p-5 transition-[transform,border-color,box-shadow] duration-200 ease-out will-change-transform hover:border-layer-application hover:shadow-xl hover:shadow-layer-application/10"
+      className="group flex h-full flex-col justify-between rounded-sm border border-border bg-foreground/[0.02] p-5 transition-[transform,border-color,box-shadow] duration-200 ease-out will-change-transform hover:border-layer-application hover:shadow-xl hover:shadow-layer-application/10"
     >
       <div>
         <div className="flex flex-wrap items-center justify-between gap-2">
