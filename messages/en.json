@@ -37,7 +37,9 @@
     "subtitle": "Work built on my own time — real products, client work, and technical challenges. What I did at each company is detailed in the experience section above.",
     "viewCase": "Read case",
     "visitRepo": "Repository",
-    "visitDemo": "Live demo"
+    "visitDemo": "Live demo",
+    "loadMore": "Show {count} more projects",
+    "showLess": "Show less"
   },
   "projectCase": {
     "back": "Back to projects",
