@@ -22,6 +22,89 @@ export const projects: Project[] = [
     year: 2026,
   },
   {
+    slug: "forge",
+    title: "Forge",
+    role: "React Native (Expo) · Next.js",
+    summary:
+      "Um app para registrar dietas e treinos, disponível tanto na web quanto no mobile, em um único produto compartilhado.",
+    layers: ["interface", "application"],
+    tech: ["reactnative", "nextjs", "typescript"],
+    repoUrl: "https://github.com/valentimcanejo/forge",
+    year: 2026,
+  },
+  {
+    slug: "uber-app",
+    title: "Uber App",
+    role: "React Native (Expo) · Kotlin · Firebase",
+    summary:
+      "Um app no estilo de transporte por aplicativo com integração real de localização do Google — geolocalização em tempo real, mapas interativos e autocomplete de endereço.",
+    layers: ["interface", "application"],
+    tech: ["reactnative", "kotlin", "firebase"],
+    repoUrl: "https://github.com/valentimcanejo/uber-app",
+    notes: [
+      "Usa expo-location, react-native-maps, react-native-google-places-autocomplete e react-native-geocoding.",
+      "Inclui um módulo nativo em Kotlin.",
+    ],
+    year: 2024,
+  },
+  {
+    slug: "nest-app",
+    title: "Nest App",
+    role: "NestJS · TypeScript",
+    summary:
+      "Uma API básica, apenas back-end, construída com NestJS, incluindo um sistema de autenticação por JWT.",
+    layers: ["application"],
+    tech: ["nestjs", "typescript"],
+    repoUrl: "https://github.com/valentimcanejo/nest-app",
+    year: 2023,
+  },
+  {
+    slug: "binary-search-tree",
+    title: "Binary Search Tree",
+    role: "Java",
+    summary:
+      "Uma árvore binária de pesquisa implementada em Java — um exercício de estruturas de dados, não uma aplicação.",
+    layers: ["data"],
+    tech: ["java"],
+    repoUrl: "https://github.com/valentimcanejo/binarysearchtree",
+    year: 2021,
+  },
+  {
+    slug: "codepix",
+    title: "CodePix",
+    role: "Go · Domain-Driven Design",
+    summary:
+      "Um projeto do curso Full Cycle: um sistema de pagamentos estilo Pix construído em Go com arquitetura em camadas (domain-driven design) — um estudo de arquitetura, não um design de produto original.",
+    layers: ["application", "data"],
+    tech: ["go"],
+    repoUrl: "https://github.com/valentimcanejo/codepix",
+    year: 2024,
+  },
+  {
+    slug: "smart-lab",
+    title: "Smart Lab",
+    role: "React Native (Expo) · TypeScript · NestJS",
+    summary:
+      "Um app mobile para o domínio laboratorial, acompanhado de um serviço de backend dedicado em NestJS.",
+    layers: ["interface", "application"],
+    tech: ["reactnative", "typescript", "nestjs"],
+    repoUrl: "https://github.com/valentimcanejo/smart-lab",
+    notes: [
+      "Serviço de backend (smart-lab-backend) construído com NestJS, em um repositório separado.",
+    ],
+    year: 2025,
+  },
+  {
+    slug: "shopping-cart",
+    title: "Shopping Cart",
+    role: "Flutter",
+    summary: "Um carrinho de compras básico construído com Flutter.",
+    layers: ["interface"],
+    tech: ["flutter", "dart"],
+    repoUrl: "https://github.com/valentimcanejo/shopping_cart",
+    year: 2023,
+  },
+  {
     slug: "price-tracker",
     title: "Price Tracker",
     role: "Next.js · TypeScript · Firebase",
@@ -36,17 +119,6 @@ export const projects: Project[] = [
       "Dashboard compara lojas e mostra gráfico do histórico de preços, com detecção do menor preço histórico.",
       "Proteção anti-spam: não repete o alerta para o mesmo preço em 24 horas.",
     ],
-    year: 2026,
-  },
-  {
-    slug: "forge",
-    title: "Forge",
-    role: "React Native (Expo) · Next.js",
-    summary:
-      "Um app para registrar dietas e treinos, disponível tanto na web quanto no mobile, em um único produto compartilhado.",
-    layers: ["interface", "application"],
-    tech: ["reactnative", "nextjs", "typescript"],
-    repoUrl: "https://github.com/valentimcanejo/forge",
     year: 2026,
   },
   {
@@ -66,46 +138,6 @@ export const projects: Project[] = [
     year: 2025,
   },
   {
-    slug: "smart-lab",
-    title: "Smart Lab",
-    role: "React Native (Expo) · TypeScript · NestJS",
-    summary:
-      "Um app mobile para o domínio laboratorial, acompanhado de um serviço de backend dedicado em NestJS.",
-    layers: ["interface", "application"],
-    tech: ["reactnative", "typescript", "nestjs"],
-    repoUrl: "https://github.com/valentimcanejo/smart-lab",
-    notes: [
-      "Serviço de backend (smart-lab-backend) construído com NestJS, em um repositório separado.",
-    ],
-    year: 2025,
-  },
-  {
-    slug: "uber-app",
-    title: "Uber App",
-    role: "React Native (Expo) · Kotlin · Firebase",
-    summary:
-      "Um app no estilo de transporte por aplicativo com integração real de localização do Google — geolocalização em tempo real, mapas interativos e autocomplete de endereço.",
-    layers: ["interface", "application"],
-    tech: ["reactnative", "kotlin", "firebase"],
-    repoUrl: "https://github.com/valentimcanejo/uber-app",
-    notes: [
-      "Usa expo-location, react-native-maps, react-native-google-places-autocomplete e react-native-geocoding.",
-      "Inclui um módulo nativo em Kotlin.",
-    ],
-    year: 2024,
-  },
-  {
-    slug: "codepix",
-    title: "CodePix",
-    role: "Go · Domain-Driven Design",
-    summary:
-      "Um projeto do curso Full Cycle: um sistema de pagamentos estilo Pix construído em Go com arquitetura em camadas (domain-driven design) — um estudo de arquitetura, não um design de produto original.",
-    layers: ["application", "data"],
-    tech: ["go"],
-    repoUrl: "https://github.com/valentimcanejo/codepix",
-    year: 2024,
-  },
-  {
     slug: "barber-shop",
     title: "Barber Shop",
     role: "Next.js · TypeScript",
@@ -116,37 +148,5 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/valentimcanejo/barber-shop",
     demoUrl: "https://barber-shop-alpha-eight.vercel.app",
     year: 2023,
-  },
-  {
-    slug: "nest-app",
-    title: "Nest App",
-    role: "NestJS · TypeScript",
-    summary:
-      "Uma API básica, apenas back-end, construída com NestJS, incluindo um sistema de autenticação por JWT.",
-    layers: ["application"],
-    tech: ["nestjs", "typescript"],
-    repoUrl: "https://github.com/valentimcanejo/nest-app",
-    year: 2023,
-  },
-  {
-    slug: "shopping-cart",
-    title: "Shopping Cart",
-    role: "Flutter",
-    summary: "Um carrinho de compras básico construído com Flutter.",
-    layers: ["interface"],
-    tech: ["flutter", "dart"],
-    repoUrl: "https://github.com/valentimcanejo/shopping_cart",
-    year: 2023,
-  },
-  {
-    slug: "binary-search-tree",
-    title: "Binary Search Tree",
-    role: "Java",
-    summary:
-      "Uma árvore binária de pesquisa implementada em Java — um exercício de estruturas de dados, não uma aplicação.",
-    layers: ["data"],
-    tech: ["java"],
-    repoUrl: "https://github.com/valentimcanejo/binarysearchtree",
-    year: 2021,
   },
 ];

@@ -21,6 +21,89 @@ export const projects: Project[] = [
     year: 2026,
   },
   {
+    slug: "forge",
+    title: "Forge",
+    role: "React Native (Expo) · Next.js",
+    summary:
+      "A diet- and workout-tracking app, available on both web and mobile, letting people log meals and training sessions in one shared product.",
+    layers: ["interface", "application"],
+    tech: ["reactnative", "nextjs", "typescript"],
+    repoUrl: "https://github.com/valentimcanejo/forge",
+    year: 2026,
+  },
+  {
+    slug: "uber-app",
+    title: "Uber App",
+    role: "React Native (Expo) · Kotlin · Firebase",
+    summary:
+      "A ride-hailing style app with real Google location integration — live geolocation, interactive maps, and address autocomplete.",
+    layers: ["interface", "application"],
+    tech: ["reactnative", "kotlin", "firebase"],
+    repoUrl: "https://github.com/valentimcanejo/uber-app",
+    notes: [
+      "Uses expo-location, react-native-maps, react-native-google-places-autocomplete, and react-native-geocoding.",
+      "Includes a native Kotlin module.",
+    ],
+    year: 2024,
+  },
+  {
+    slug: "nest-app",
+    title: "Nest App",
+    role: "NestJS · TypeScript",
+    summary:
+      "A basic backend-only API built with NestJS, including a JWT-based authentication system.",
+    layers: ["application"],
+    tech: ["nestjs", "typescript"],
+    repoUrl: "https://github.com/valentimcanejo/nest-app",
+    year: 2023,
+  },
+  {
+    slug: "binary-search-tree",
+    title: "Binary Search Tree",
+    role: "Java",
+    summary:
+      "A binary search tree implemented in Java — a data-structures exercise, not an application.",
+    layers: ["data"],
+    tech: ["java"],
+    repoUrl: "https://github.com/valentimcanejo/binarysearchtree",
+    year: 2021,
+  },
+  {
+    slug: "codepix",
+    title: "CodePix",
+    role: "Go · Domain-Driven Design",
+    summary:
+      "A Full Cycle course project: a Pix-style payment system built in Go with a layered, domain-driven design architecture — an architecture study, not an original product design.",
+    layers: ["application", "data"],
+    tech: ["go"],
+    repoUrl: "https://github.com/valentimcanejo/codepix",
+    year: 2024,
+  },
+  {
+    slug: "smart-lab",
+    title: "Smart Lab",
+    role: "React Native (Expo) · TypeScript · NestJS",
+    summary:
+      "A mobile app for the laboratory domain, paired with a dedicated NestJS backend service.",
+    layers: ["interface", "application"],
+    tech: ["reactnative", "typescript", "nestjs"],
+    repoUrl: "https://github.com/valentimcanejo/smart-lab",
+    notes: [
+      "Companion backend service (smart-lab-backend) built with NestJS, in a separate repository.",
+    ],
+    year: 2025,
+  },
+  {
+    slug: "shopping-cart",
+    title: "Shopping Cart",
+    role: "Flutter",
+    summary: "A basic shopping-cart app built with Flutter.",
+    layers: ["interface"],
+    tech: ["flutter", "dart"],
+    repoUrl: "https://github.com/valentimcanejo/shopping_cart",
+    year: 2023,
+  },
+  {
     slug: "price-tracker",
     title: "Price Tracker",
     role: "Next.js · TypeScript · Firebase",
@@ -35,17 +118,6 @@ export const projects: Project[] = [
       "Dashboard compares stores and charts price history, including historical-low detection.",
       "Anti-spam guard: won't re-alert for the same price within 24 hours.",
     ],
-    year: 2026,
-  },
-  {
-    slug: "forge",
-    title: "Forge",
-    role: "React Native (Expo) · Next.js",
-    summary:
-      "A diet- and workout-tracking app, available on both web and mobile, letting people log meals and training sessions in one shared product.",
-    layers: ["interface", "application"],
-    tech: ["reactnative", "nextjs", "typescript"],
-    repoUrl: "https://github.com/valentimcanejo/forge",
     year: 2026,
   },
   {
@@ -65,46 +137,6 @@ export const projects: Project[] = [
     year: 2025,
   },
   {
-    slug: "smart-lab",
-    title: "Smart Lab",
-    role: "React Native (Expo) · TypeScript · NestJS",
-    summary:
-      "A mobile app for the laboratory domain, paired with a dedicated NestJS backend service.",
-    layers: ["interface", "application"],
-    tech: ["reactnative", "typescript", "nestjs"],
-    repoUrl: "https://github.com/valentimcanejo/smart-lab",
-    notes: [
-      "Companion backend service (smart-lab-backend) built with NestJS, in a separate repository.",
-    ],
-    year: 2025,
-  },
-  {
-    slug: "uber-app",
-    title: "Uber App",
-    role: "React Native (Expo) · Kotlin · Firebase",
-    summary:
-      "A ride-hailing style app with real Google location integration — live geolocation, interactive maps, and address autocomplete.",
-    layers: ["interface", "application"],
-    tech: ["reactnative", "kotlin", "firebase"],
-    repoUrl: "https://github.com/valentimcanejo/uber-app",
-    notes: [
-      "Uses expo-location, react-native-maps, react-native-google-places-autocomplete, and react-native-geocoding.",
-      "Includes a native Kotlin module.",
-    ],
-    year: 2024,
-  },
-  {
-    slug: "codepix",
-    title: "CodePix",
-    role: "Go · Domain-Driven Design",
-    summary:
-      "A Full Cycle course project: a Pix-style payment system built in Go with a layered, domain-driven design architecture — an architecture study, not an original product design.",
-    layers: ["application", "data"],
-    tech: ["go"],
-    repoUrl: "https://github.com/valentimcanejo/codepix",
-    year: 2024,
-  },
-  {
     slug: "barber-shop",
     title: "Barber Shop",
     role: "Next.js · TypeScript",
@@ -115,37 +147,5 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/valentimcanejo/barber-shop",
     demoUrl: "https://barber-shop-alpha-eight.vercel.app",
     year: 2023,
-  },
-  {
-    slug: "nest-app",
-    title: "Nest App",
-    role: "NestJS · TypeScript",
-    summary:
-      "A basic backend-only API built with NestJS, including a JWT-based authentication system.",
-    layers: ["application"],
-    tech: ["nestjs", "typescript"],
-    repoUrl: "https://github.com/valentimcanejo/nest-app",
-    year: 2023,
-  },
-  {
-    slug: "shopping-cart",
-    title: "Shopping Cart",
-    role: "Flutter",
-    summary: "A basic shopping-cart app built with Flutter.",
-    layers: ["interface"],
-    tech: ["flutter", "dart"],
-    repoUrl: "https://github.com/valentimcanejo/shopping_cart",
-    year: 2023,
-  },
-  {
-    slug: "binary-search-tree",
-    title: "Binary Search Tree",
-    role: "Java",
-    summary:
-      "A binary search tree implemented in Java — a data-structures exercise, not an application.",
-    layers: ["data"],
-    tech: ["java"],
-    repoUrl: "https://github.com/valentimcanejo/binarysearchtree",
-    year: 2021,
   },
 ];
