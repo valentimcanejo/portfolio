@@ -32,9 +32,9 @@
     }
   },
   "projects": {
-    "eyebrow": "// projetos",
-    "title": "Trabalhos selecionados",
-    "subtitle": "Uma seleção curada de produtos reais, trabalho para clientes e desafios técnicos.",
+    "eyebrow": "// projetos pessoais",
+    "title": "Projetos pessoais",
+    "subtitle": "Iniciativas por conta própria — produtos reais, trabalho para clientes e desafios técnicos. O que fiz em cada empresa está detalhado na experiência, acima.",
     "viewCase": "Ler case",
     "visitRepo": "Repositório",
     "visitDemo": "Demo ao vivo"

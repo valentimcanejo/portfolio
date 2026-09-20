@@ -32,9 +32,9 @@
     }
   },
   "projects": {
-    "eyebrow": "// projects",
-    "title": "Selected work",
-    "subtitle": "A curated selection of real products, client work, and technical challenges.",
+    "eyebrow": "// personal projects",
+    "title": "Personal projects",
+    "subtitle": "Work built on my own time — real products, client work, and technical challenges. What I did at each company is detailed in the experience section above.",
     "viewCase": "Read case",
     "visitRepo": "Repository",
     "visitDemo": "Live demo"
