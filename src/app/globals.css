@@ -7,6 +7,7 @@
   --color-teal: #2f7e77;
   --color-stamp: #b34a3c;
   --color-graphite: #6b6656;
+  --color-slate: #4f6273;
 
   --background: var(--color-paper);
   --foreground: var(--color-ink);
@@ -25,6 +26,7 @@
     --color-amber: #eb9d3f;
     --color-teal: #46a89f;
     --color-stamp: #d3665a;
+    --color-slate: #8aa0b3;
   }
 }
 
@@ -37,7 +39,7 @@
   --color-layer-interface: var(--color-amber);
   --color-layer-application: var(--color-teal);
   --color-layer-data: var(--color-stamp);
-  --color-layer-infra: var(--color-graphite);
+  --color-layer-infra: var(--color-slate);
 
   --font-display: var(--font-space-grotesk);
   --font-sans: var(--font-plex-sans);
