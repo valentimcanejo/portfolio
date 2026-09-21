@@ -5,9 +5,9 @@ export const profile: Profile = {
   role: "Fullstack Developer",
   tagline: "I build across the full stack — from the pixel to the database.",
   bio: [
-    "Full-stack developer with 4+ years of experience, based in Natal, Brazil, open to remote. End-to-end track record in React, Next.js, React Native, Node.js, and Firebase — most recently building the Fully app, a health and wellness platform for a Prudential-backed startup, with professional meetings in English with international professionals, while my day-to-day experience has been primarily with local teams.",
-    "Before that, I led a development team technically for three years at DNA Center, building mission-critical systems — lab queuing, medical document storage, microbiological tracking — used daily by 300+ employees across 40 laboratory units.",
-    "Outside of client and employer work, I design and build my own products, like Lumen, a multilingual microlearning app I took from idea through development, design, and marketing myself.",
+    "Full-stack developer with 4+ years of experience, based in Natal, Brazil, open to remote. End-to-end with React, Next.js, React Native, Node.js, and Firebase — most recently on Fully, a health and wellness app for a Prudential-backed startup, with professional English meetings alongside mostly local day-to-day work.",
+    "Before that, I technically led development for three years at DNA Center on mission-critical systems — lab queuing, medical document storage, microbiological tracking — used daily by 300+ employees across 40 units.",
+    "I also build my own products, like Lumen — a multilingual microlearning app where I handled idea, design, development, and marketing myself.",
   ],
   location: "Natal, RN, Brazil",
   email: "valentim.canejo@hotmail.com",
