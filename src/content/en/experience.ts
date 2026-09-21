@@ -11,7 +11,7 @@ export const experience: ExperienceEntry[] = [
       "Personalized weekly goals system for each user, covering physical activity, nutrition, and mental health.",
       "Automatic data sync across Samsung Health, Apple Health, and Health Connect.",
       "Next.js admin modules for user management, focused on scalability.",
-      "Recurring technical communication in English with different Prudential teams, aligning product priorities, architecture, and bug fixes.",
+      "A handful of English-language meetings with Prudential teams to align on product priorities, architecture, and bug fixes — day-to-day work was with the local, Portuguese-speaking team.",
     ],
   },
   {

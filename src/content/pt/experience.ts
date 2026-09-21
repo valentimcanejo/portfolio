@@ -11,7 +11,7 @@ export const experience: ExperienceEntry[] = [
       "Sistema de metas semanais personalizadas por usuário, cobrindo atividade física, nutrição e saúde mental.",
       "Sincronização automática de dados entre Samsung Health, Apple Health e Health Connect.",
       "Módulos administrativos em Next.js para gestão de usuários, com foco em escalabilidade.",
-      "Comunicação técnica em inglês em reuniões recorrentes com diferentes times da Prudential, alinhando prioridades de produto, arquitetura e correção de bugs.",
+      "Algumas reuniões em inglês com times da Prudential para alinhar prioridades de produto, arquitetura e correção de bugs — o dia a dia foi com o time local, em português.",
     ],
   },
   {
