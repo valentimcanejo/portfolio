@@ -11,26 +11,29 @@ export function LocaleSwitcher() {
   const t = useTranslations("language");
 
   return (
-    <div
-      className="inline-flex items-center rounded-sm border-2 border-layer-application font-mono text-sm font-semibold"
-      role="group"
-      aria-label={t("label")}
-    >
-      {routing.locales.map((loc) => (
-        <button
-          key={loc}
-          type="button"
-          aria-pressed={loc === locale}
-          onClick={() => router.replace(pathname, { locale: loc })}
-          className={`px-3 py-1.5 uppercase transition-colors ${
-            loc === locale
-              ? "bg-layer-application text-background"
-              : "text-layer-application hover:bg-layer-application/10"
-          }`}
-        >
-          {loc}
-        </button>
-      ))}
+    <div className="inline-flex items-center gap-2 font-mono text-xs">
+      <span className="hidden text-muted lg:inline">// {t("label").toLowerCase()}</span>
+      <div
+        className="inline-flex items-center rounded-sm border border-border text-sm"
+        role="group"
+        aria-label={t("label")}
+      >
+        {routing.locales.map((loc) => (
+          <button
+            key={loc}
+            type="button"
+            aria-pressed={loc === locale}
+            onClick={() => router.replace(pathname, { locale: loc })}
+            className={`px-3 py-1.5 font-semibold uppercase transition-colors ${
+              loc === locale
+                ? "bg-foreground text-background"
+                : "text-muted hover:text-foreground"
+            }`}
+          >
+            {loc}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
