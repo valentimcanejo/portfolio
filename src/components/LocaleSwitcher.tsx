@@ -12,7 +12,7 @@ export function LocaleSwitcher() {
 
   return (
     <div
-      className="inline-flex items-center rounded-sm border border-border font-mono text-xs"
+      className="inline-flex items-center rounded-sm border-2 border-layer-application font-mono text-sm font-semibold"
       role="group"
       aria-label={t("label")}
     >
@@ -22,10 +22,10 @@ export function LocaleSwitcher() {
           type="button"
           aria-pressed={loc === locale}
           onClick={() => router.replace(pathname, { locale: loc })}
-          className={`px-2.5 py-1.5 uppercase transition-colors ${
+          className={`px-3 py-1.5 uppercase transition-colors ${
             loc === locale
-              ? "bg-foreground text-background"
-              : "text-muted hover:text-foreground"
+              ? "bg-layer-application text-background"
+              : "text-layer-application hover:bg-layer-application/10"
           }`}
         >
           {loc}
